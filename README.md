@@ -1,3 +1,3 @@
-# expressfood
+# Express Food
 
-Projet 4 OpenClassRooms parcours Développeur d'application php/symfony
+OpenClassrooms Projet n°4 du parcours développeur d'application php/symfony 
