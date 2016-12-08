@@ -1,0 +1,75 @@
+/* -------------------Sytles personnalisés------------------- */
+
+
+/* -------------------Styles de base------------------- */
+
+.div-identification{
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    background-color: rgba(8, 11, 12, 0.9);
+    width: 100%;
+    height: 100%;
+}
+.top20{
+    margin-top: 20px;
+}
+
+.bottom20{
+    margin-bottom: 20px;
+}
+
+.h100{
+    height: 100% !important;
+}
+
+.flex-middle{
+    display: flex;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-bottom{
+    align-self: flex-end;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.nav{
+    margin-bottom: 0px;
+}
+
+/* -------------------menu------------------- */
+
+.logo{
+    max-width: 250px;
+}
+
+/*--------------------NOS MENUS-----------------*/
+
+.produitIMG{
+    width: 100%;
+}
+
+/*--------------------PANIER-----------------*/
+
+table{
+    border: 1px solid black;
+    width: 100%;
+}
+
+tr, td, th{
+    border: 1px solid black;
+}
