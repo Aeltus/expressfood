@@ -13,10 +13,10 @@ garder une certaine lisibilité, les fichiers ont été classés comme suit :
             - assets : les fichiers css, images et js
             
         - class : les classes en 3 catégories
-            - DAO : qui est l'entité qui permette d'accéder à la BDD
-            - Les classes nommées Manager gèrent les entités, et préparent en conséquence les requettes pour DAO
+            - DAO : qui est l'entité qui permet d'accéder à la BDD
+            - Les classes nommées Manager gèrent les entités, et prépare les requettes pour DAO
             - Les classes portant le nom de leur type (ex : Produit ou Utilisateur) seront les entités
-            - La classe ServiceProvider sert à fournir les services de base de l'application gérer les session, les routes etc...
+            - La classe ServiceProvider sert juste à fournir les services de base de l'application gérer les session, les routes etc...
                     
         - Dans le dossier racine, index.php fait office de controller frontal
         

@@ -59,7 +59,7 @@ class Utilisateur {
     private  $visible;
 
 
-	/**
+    /**
 	 * @access public
 	 * @return int
 	 */
@@ -138,13 +138,26 @@ class Utilisateur {
     }
 
 
+
+    /**
+     * @access public
+     * @param string $idUtilisateur
+     * @return void
+     */
+
+    public function setIdUtilisateur($idUtilisateur) {
+        $this->idUtilisateur = $idUtilisateur;
+    }
+
+
+
 	/**
 	 * @access public
 	 * @param string $nom 
 	 * @return void
 	 */
 
-	public final  function setNom($nom) {
+	public  function setNom($nom) {
         $this->nom = $nom;
 	}
 
@@ -155,7 +168,7 @@ class Utilisateur {
 	 * @return void
 	 */
 
-	public final  function setPrenom($prenom) {
+	public  function setPrenom($prenom) {
         $this->prenom = $prenom;
 	}
 
@@ -166,7 +179,7 @@ class Utilisateur {
 	 * @return void
 	 */
 
-	public final  function setMail($mail) {
+	public  function setMail($mail) {
         $this->mail = $mail;
 	}
 
@@ -177,7 +190,7 @@ class Utilisateur {
 	 * @return void
 	 */
 
-	public final  function setMotDePasse($motDePasse) {
+	public  function setMotDePasse($motDePasse) {
         $this->motDePasse = $motDePasse;
 	}
 
@@ -188,7 +201,7 @@ class Utilisateur {
 	 * @return void
 	 */
 
-	public final  function setIdEmploye($idEmploye) {
+	public function setIdEmploye($idEmploye) {
         $this->idEmploye = $idEmploye;
 	}
 
@@ -198,11 +211,11 @@ class Utilisateur {
 	 * @param int $idCLient 
 	 */
 
-	public final  function setIdClient($idCLient) {
+	public function setIdClient($idCLient) {
         $this->idClient = $idCLient;
 	}
 
-    public final  function setVisible($visible = 1) {
+    public function setVisible($visible = 1) {
         $this->idClient = $visible;
     }
 

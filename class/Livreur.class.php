@@ -3,7 +3,6 @@
  *
  * @see        Employe
  */
-USE Employe;
 
 class Livreur extends Employe {
 
@@ -34,6 +33,14 @@ class Livreur extends Employe {
 	 * @access private
 	 */
 	private  $villeRatach;
+
+
+    /**
+     *
+     * @var bool
+     * @access private
+     */
+    private  $dispo;
 
 
 	/**
@@ -89,15 +96,35 @@ class Livreur extends Employe {
 
 
 	/**
-	 * @access public
-	 * @param string $villeRatach 
-	 * @return void
-	 */
+ * @access public
+ * @param string $villeRatach
+ * @return void
+ */
 
-	public final  function setVilleRatach($villeRatach) {
+    public final  function setVilleRatach($villeRatach) {
         $this->villeRatach = $villeRatach;
-	}
+    }
 
+
+
+    /**
+     * @access public
+     * @param bool $valeur
+     * @return void
+     */
+
+    public final  function setDispo($valeur) {
+        $this->dispo = $valeur;
+    }
+
+    /**
+     * @access public
+     * @return bool
+     */
+
+    public final  function getdispo() {
+        return $this->dispo;
+    }
 
 }
 ?>

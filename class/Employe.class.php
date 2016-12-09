@@ -3,7 +3,6 @@
  *
  * @see        Utilisateur
  */
-USE Utilisateur;
 
 class Employe extends Utilisateur {
 

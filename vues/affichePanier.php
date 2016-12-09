@@ -19,7 +19,9 @@
             $totalPayer = 0;
             foreach($_SESSION['panier'] as $idProduit => $qtiteProduit){
 
-                include ('controller/affichePanier.php');
+
+                $req = new ProductManager();
+                $reponse = $req->getProduct($idProduit);
                 $produit = $reponse->fetch();
                 $payerProduit = $produit['prix'] * $qtiteProduit;
                 $totalPayer += $payerProduit;
@@ -52,13 +54,13 @@
         ?>
         <div class="col-md-6 text-center">
             <h3>Vérifiez votre adresse</h3>
-            <p><?php echo $_SESSION['nom'].' '.$_SESSION['prenom'];?></p>
-            <p><?php echo $_SESSION['numero'].' '.$_SESSION['rue'];?></p>
-            <p><?php echo $_SESSION['code_postal'].' '.$_SESSION['ville'];?></p>
-            <p><?php echo 'mail : '.$_SESSION['mail_utilisateur'];?></p>
+            <p><?php echo $_SESSION['utilisateur']->getNom().' '.$_SESSION['utilisateur']->getPreNom();?></p>
+            <p><?php echo $_SESSION['utilisateur']->getNumero().' '.$_SESSION['utilisateur']->getRue();?></p>
+            <p><?php echo $_SESSION['utilisateur']->getCodePostal().' '.$_SESSION['utilisateur']->getVille();?></p>
+            <p><?php echo 'mail : '.$_SESSION['utilisateur']->getMail();?></p>
             <?php
             if (!isset($_SESSION['refCommande'])){
-                $_SESSION['refCommande'] = $_SESSION['id_utilisateur'].'_'.date('h-i-s_j-m-y');
+                $_SESSION['refCommande'] = $_SESSION['utilisateur']->getIdUtilisateur().'_'.date('h-i-s_j-m-y');
             }
             ?>
             <br /><p><?php echo 'Votre commande portera le N° : '.$_SESSION['refCommande'];?></p>
@@ -68,7 +70,7 @@
             <div class="col-md-12 text-center">
                 <h3>Paiement</h3>
                 <br />
-                <form action="controller/commandConfirm.php" method="POST">
+                <form action="<?php echo ServiceProvider::setRoute('paymentConfirm') ?>" method="POST">
                     <script
                             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                             data-key="pk_test_NG3Imu5SX97XdG0JMvEtCgGC"
@@ -83,7 +85,7 @@
                 </form>
             </div>
             <div class="col-md-12 text-center top20">
-                <a href="controller/deletePanier.php">Annuler le panier</a>
+                <a href="index.php?action=deletePanier">Vider le panier</a>
             </div>
         </div>
 

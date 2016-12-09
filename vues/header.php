@@ -35,7 +35,7 @@
 <body>
 
 <div class="div-identification text-center">
-    <form  method="post" action="<?php echo ServiceProvider::setRoute('identifie'); ?>">
+    <form  method="post" action="index.php?action=identifier">
         <div id="close-btn" class="text-right"><a href="/">FERMER -<i class="fa fa-times" aria-hidden="true"></i></a></div>
         <span><h1>Saisissez votre login / mot de passe</h1></span>
         <br />
@@ -75,10 +75,10 @@
                                 echo'<li class="menu-btn"><a href="#" class="identification">S\'IDENTIFIER</a></li>';
                             } else if($_SESSION['role']=='admin' or $_SESSION['role']=='service' or $_SESSION['role']=='livreur'){
                                 echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('accueil').'">Administration</a></li>';
-                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('deconnecte').'?action=deconnecter">(Se déconnecter)</a></li>';
+                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('accueil').'&action=deconnecter">(Se déconnecter)</a></li>';
                             } else if($_SESSION['role']=='client'){
                                 echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('monCompte').'">Mon Compte</a></li>';
-                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('deconnecte').'?action=deconnecter">(Se déconnecter)</a></li>';
+                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('accueil').'&action=deconnecter">(Se déconnecter)</a></li>';
                             }
 
                             ?>

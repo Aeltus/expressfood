@@ -3,7 +3,7 @@
  *
  * @see        DAO
  */
-USE DAO;
+
 
 class ProductManager extends DAO {
 
@@ -17,7 +17,7 @@ class ProductManager extends DAO {
 	 */
 
 	public  function getProduct($idProduit) {
-
+        return $this->pdoMysqlQuery("SELECT * FROM produits WHERE id_produit=".$idProduit);
 	}
 
 
@@ -29,7 +29,7 @@ class ProductManager extends DAO {
 	 */
 
 	public  function getProducts() {
-
+       return $this->pdoMysqlQuery("SELECT * FROM produits WHERE visible='1' ORDER BY type DESC");
 	}
 
 

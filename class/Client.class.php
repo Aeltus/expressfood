@@ -3,7 +3,6 @@
  *
  * @see        Utilisateur
  */
-USE Utilisateur;
 
 class Client extends Utilisateur {
 

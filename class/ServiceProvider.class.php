@@ -60,24 +60,71 @@ class ServiceProvider
 
     }
 
-    /**
-     *
-     * return void
-     *
-     * détruit la session
-     */
-    public static function deconnecte(){
-        session_destroy();
+
+    public static function actionLoader($action){
+        if($action == "deconnecter") {
+
+            if (session_destroy()){
+                ServiceProvider::newPage();
+            } else {
+                $_SESSION['message-erreur'] = "Impossible de détruire la session en cours";
+            }
+
+
+        } else if($action == "identifier"){
+
+            $identification = new UserManager();
+            $_SESSION['utilisateur'] = $identification->identifyUser($_POST['mail'], $_POST['password']);
+            ServiceProvider::newPage();
+
+
+        } else if($action == "addPanier"){
+            $ajoutPanier = array($_POST['idProduit'], $_POST['qtiteProduit']);
+            if (!isset($_SESSION['panier'])){
+                $_SESSION['panier'] = array($_POST['idProduit'] => (int)$_POST['qtiteProduit']);
+            } else {
+                $_SESSION['panier'][$_POST['idProduit']] = (int)$_POST['qtiteProduit'];
+            }
+            $_SESSION['message-ok'] = "Ajout au panier réussi";
+            ServiceProvider::newPage();
+
+
+        } else if($action == "deletePanier"){
+
+            $_SESSION['panier'] = NULL;
+            $route = ServiceProvider::setRoute('menu');
+            ServiceProvider::newPage($route);
+
+        }
     }
 
-    /**
-     *
-     * return void
-     *
-     * détruit la session et renvoie à l'accueil
-     */
-    public static function connecte(){
+
+    public static function sessionStart(){
         session_start();
+
+        if (!isset($_SESSION['content'])){
+            $_SESSION['content'] = "vues/accueil.html";
+        }
+        if (!isset($_SESSION['role'])){
+            $_SESSION['role'] = "anonyme";
+        }
     }
+
+    public static function router($route){
+
+            if (file_exists ($_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.php')){
+                $routeComplete = $_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.php';
+            } else  if (file_exists ($_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.htm')){
+                $routeComplete = $_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.htm';
+            } else  if (file_exists ($_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.html')){
+                $routeComplete = $_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.html';
+            } else {
+                $_SESSION['message-erreur'] = "Les pages :<br />     - vues/".$route.".php<br />     - vues/".$route.".html<br />     - vues/".$route.".htm<br /> n'existent pas. Merci de vérifier l'adresse.";
+                $routeComplete = '404.php';
+            }
+
+        return $routeComplete;
+
+        }
 
 }

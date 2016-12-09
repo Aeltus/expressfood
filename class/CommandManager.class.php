@@ -3,7 +3,6 @@
  *
  * @see        DAO
  */
-USE DAO;
 
 class CommandManager extends DAO {
 
