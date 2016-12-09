@@ -59,6 +59,18 @@ class Utilisateur {
     private  $visible;
 
 
+    function __construct($idUtilisateur=NULL, $nom, $prenom, $mail, $motDePasse=NULL, $idEmploye=NULL, $idClient=NULL, $visible=1)
+    {
+        $this->setIdUtilisateur($idUtilisateur);
+        $this->setNom($nom);
+        $this->setPrenom($prenom);
+        $this->setMail($mail);
+        $this->setMotDePasse($motDePasse);
+        $this->setIdEmploye($idEmploye);
+        $this->setIdClient($idClient);
+        $this->setVisible($visible);
+    }
+
     /**
 	 * @access public
 	 * @return int

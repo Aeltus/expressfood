@@ -34,13 +34,26 @@ class CommandManager extends DAO {
 
 	/**
 	 * @access public
-	 * @param object $command 
+	 * @param array object Command
 	 * @return void
      *
      * Ajoute une commande en BDD
 	 */
 
-	public  function addCommand($command) {
+	public  function addCommand($commandArray) {
+
+	    $query = "INSERT INTO commande VALUES ";
+	    $i=0;
+
+	    foreach ($commandArray as $command){
+	        if ($i > 0){
+	            $query .= ", ";
+            }
+            $i++;
+	        $query .= "(".$command->getIdUtilisateur().", ".$command->getIdProduit().", ".$command->getQuantite().", '".$command->getRefCommande()."', ".$command->getIdLivreur().", '".$command->getDateCommande()->format('Y-m-d H:m:s')."', NULL)";
+        }
+
+        $this->pdoMysqlQuery($query);
 
 	}
 

@@ -26,8 +26,7 @@ class UserManager extends DAO {
 
 
     // recup infos livreurs en BDD
-    $query = "SELECT * FROM livreur WHERE ville_ratach='".$client->getVille()."' AND dispo=1";
-    $livreurs = $this->pdoMysqlQuery($query);
+    $livreurs = $this->getLivreursByVille($client->getVille());
     $nbrePostulants = 0;
     $idLivreurs = [];
 
@@ -71,7 +70,6 @@ class UserManager extends DAO {
 
     } else {
 
-        $_SESSION['message-ok'] = "Merci de votre commande<br />L'id du livreur choisi est : ".$idLivreurChoisi." il se trouve actuellement à ".$distance." et sera chez vous d'ici ".$dureStr;
         $idLivreurChoisi = $idLivreurs[$rangLivreurChoisi];
     }
 
@@ -93,14 +91,37 @@ class UserManager extends DAO {
 	/**
 	 * @access public
 	 * @param int $idLivreur 
-	 * @return object
+	 * @return object Livreur
      *
-     * trouve un livreur en BDD
 	 */
 
 	public  function getLivreurById($idLivreur) {
 
+        $query = "SELECT * FROM utilisateur";
+        $query .= " ";
+        $query .= "LEFT JOIN employe ON utilisateur.employe_id_employe = employe.id_employe";
+        $query .= " ";
+        $query .= "LEFT JOIN livreur ON employe.livreur_id_livreur = livreur.id_livreur";
+        $query .= " ";
+        $query .= "WHERE id_livreur ='" . $idLivreur . "'";
+        $query .= " ";
+        $query .= "LIMIT 1";
+
+        $livreur = $this->pdoMysqlQuery($query);
+        $donnees = $livreur->fetch();
+
+        return new Livreur($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], $donnees['livreur_id_livreur'], $donnees['location_lat'], $donnees['location_long'], $donnees['ville_ratach'], $donnees['dispo']);
+
 	}
+
+    /**
+     * @param $ville
+     * @return PDOStatement
+     */
+    public function getLivreursByVille($ville){
+        $query = "SELECT * FROM livreur WHERE ville_ratach='".$ville."' AND dispo=1";
+        return $this->pdoMysqlQuery($query);
+    }
 
 
 	/**
@@ -126,19 +147,8 @@ class UserManager extends DAO {
 
 	public function identifyUser($login, $motDePasse)
     {
-        $query = "SELECT * FROM utilisateur";
-        $query .= " ";
-        $query .= "LEFT JOIN client ON utilisateur.client_id_client = client.id_client";
-        $query .= " ";
-        $query .= "LEFT JOIN employe ON utilisateur.employe_id_employe = employe.id_employe";
-        $query .= " ";
-        $query .= "WHERE mail ='" . $login . "'";
-        $query .= " ";
-        $query .= "AND mot_de_passe = '" . $motDePasse . "'";
-        $query .= " ";
-        $query .= "LIMIT 1";
 
-        $user = $this->pdoMysqlQuery($query);
+        $user = $this->getUserByLogin($login, $motDePasse);
 
         $donnees = $user->fetch();
 
@@ -151,20 +161,10 @@ class UserManager extends DAO {
 
             if (isset($donnees['client_id_client'])) {
 
-                $client = new Client();
-                $client->setIdUtilisateur($donnees['id_utilisateur']);
-                $client->setNom($donnees['nom']);
-                $client->setPrenom($donnees['prenom']);
-                $client->setMail($donnees['mail']);
-                $client->setIdClient($donnees['client_id_client']);
-                $client->setNumero($donnees['numero']);
-                $client->setRue($donnees['rue']);
-                $client->setCodePostal($donnees['code_postal']);
-                $client->setVille($donnees['ville']);
-
+                //Si c'est un client, on instancie une entité client
+                $curentUser = new Client($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, NULL, $donnees['client_id_client'], 1, $donnees['numero'], $donnees['rue'], $donnees['code_postal'], $donnees['ville']);
                 $_SESSION['role'] = 'client';
 
-                return $client;
 
             } else if (isset($donnees['employe_id_employe'])) {
 
@@ -172,43 +172,31 @@ class UserManager extends DAO {
 
                 if(isset($donnees['livreur_id_livreur'])){
 
-                    // si c'est un  livreur on commence par définir les attributs spécifiques
-                    $employe = new Livreur();
-                    $employe->setLocationLat($donnees['location_lat']);
-                    $employe->setLocationLong($donnees['location_long']);
-                    $employe->setVilleRatach($donnees['ville_ratach']);
-
+                    // si c'est un  livreur on instancie une entité Livreur
+                    $curentUser = new Livreur($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], $donnees['livreur_id_livreur'], $donnees['location_lat'], $donnees['location_long'], $donnees['ville_ratach'], $donnees['dispo']);
 
 
                 } else {
 
                     // sinon, on définit l'entité comme instance de employé
-                    $employe = new Employe();
+                    $curentUser = new Employe($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], NULL);
 
                 }
 
-                //on définit les attributs communs à employé et livreur
-                $employe->setIdUtilisateur($donnees['id_utilisateur']);
-                $employe->setNom($donnees['nom']);
-                $employe->setPrenom($donnees['prenom']);
-                $employe->setMail($donnees['mail']);
-                $employe->setIdEmploye($donnees['employe_id_employe']);
-                $employe->setDroits($donnees['droits']);
-
-
-                if ($employe->getDroits() == 1){
+                // On défini les roles en fonction des droits
+                if ($curentUser->getDroits() == 1){
                     $_SESSION['role'] = 'admin';
-                } else if($employe->getDroits() == 2){
+                } else if($curentUser->getDroits() == 2){
                     $_SESSION['role'] = 'service';
-                } else if($employe->getDroits() == 3){
+                } else if($curentUser->getDroits() == 3){
                     $_SESSION['role'] = 'livreur';
                 }
 
-                return $employe;
 
             }
-
+            return $curentUser;
         }
+
     }
 
 
@@ -249,6 +237,31 @@ class UserManager extends DAO {
 	public final  function updateUser( $Utilisateur) {
 
 	}
+
+
+    /**
+     * @param $login
+     * @param $motDePasse
+     *
+     * return PDO Object
+     */
+    public function getUserByLogin($login, $motDePasse){
+
+        $query = "SELECT * FROM utilisateur";
+        $query .= " ";
+        $query .= "LEFT JOIN client ON utilisateur.client_id_client = client.id_client";
+        $query .= " ";
+        $query .= "LEFT JOIN employe ON utilisateur.employe_id_employe = employe.id_employe";
+        $query .= " ";
+        $query .= "WHERE mail ='" . $login . "'";
+        $query .= " ";
+        $query .= "AND mot_de_passe = '" . $motDePasse . "'";
+        $query .= " ";
+        $query .= "LIMIT 1";
+
+        return $this->pdoMysqlQuery($query);
+
+    }
 
 
 }

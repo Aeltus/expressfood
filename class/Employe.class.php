@@ -27,8 +27,15 @@ class Employe extends Utilisateur {
 	 */
 	private  $idLivreur;
 
+	function __construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $droits, $idLivreur=NULL)
+    {
+        parent::__construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible);
+        $this->setDroits($droits);
+        $this->setIdLivreur($idLivreur);
+    }
 
-	/**
+
+    /**
 	 * @access public
 	 * @return int
 	 */

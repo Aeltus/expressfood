@@ -161,104 +161,110 @@ produits_id_produit</ColNames>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="44" parent="13" name="PRIMARY">
-      <ColNames>id_livreur</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="45" parent="14" name="id_produit">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-    </column>
-    <column id="46" parent="14" name="nom">
-      <Position>2</Position>
-      <DataType>varchar(45)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="47" parent="14" name="description">
-      <Position>3</Position>
-      <DataType>varchar(255)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="48" parent="14" name="photo">
-      <Position>4</Position>
-      <DataType>varchar(45)|0</DataType>
-    </column>
-    <column id="49" parent="14" name="visible">
+    <column id="44" parent="13" name="dispo">
       <Position>5</Position>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <column id="50" parent="14" name="prix">
+    <key id="45" parent="13" name="PRIMARY">
+      <ColNames>id_livreur</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="14" name="id_produit">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="14" name="nom">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="14" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="14" name="photo">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="50" parent="14" name="visible">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="51" parent="14" name="prix">
       <Position>6</Position>
       <DataType>float|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="14" name="type">
+    <column id="52" parent="14" name="type">
       <Position>7</Position>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <key id="52" parent="14" name="PRIMARY">
+    <key id="53" parent="14" name="PRIMARY">
       <ColNames>id_produit</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="53" parent="15" name="id_utilisateur">
+    <column id="54" parent="15" name="id_utilisateur">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="54" parent="15" name="nom">
+    <column id="55" parent="15" name="nom">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="55" parent="15" name="prenom">
+    <column id="56" parent="15" name="prenom">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="15" name="mail">
+    <column id="57" parent="15" name="mail">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="15" name="mot_de_passe">
+    <column id="58" parent="15" name="mot_de_passe">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="15" name="employe_id_employe">
+    <column id="59" parent="15" name="employe_id_employe">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="59" parent="15" name="client_id_client">
+    <column id="60" parent="15" name="client_id_client">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="60" parent="15" name="fk_utilisateur_client1_idx">
+    <index id="61" parent="15" name="fk_utilisateur_client1_idx">
       <ColNames>client_id_client</ColNames>
     </index>
-    <index id="61" parent="15" name="fk_utilisateur_employe1_idx">
+    <index id="62" parent="15" name="fk_utilisateur_employe1_idx">
       <ColNames>employe_id_employe</ColNames>
     </index>
-    <index id="62" parent="15" name="mail">
+    <index id="63" parent="15" name="mail">
       <ColNames>mail</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="63" parent="15" name="PRIMARY">
+    <key id="64" parent="15" name="PRIMARY">
       <ColNames>id_utilisateur</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="64" parent="15" name="mail">
+    <key id="65" parent="15" name="mail">
       <ColNames>mail</ColNames>
       <UnderlyingIndexName>mail</UnderlyingIndexName>
     </key>
-    <foreign-key id="65" parent="15" name="fk_utilisateur_employe1">
+    <foreign-key id="66" parent="15" name="fk_utilisateur_employe1">
       <ColNames>employe_id_employe</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>employe</RefTableName>
@@ -266,7 +272,7 @@ produits_id_produit</ColNames>
       <OnUpdate>no-action</OnUpdate>
       <OnDelete>no-action</OnDelete>
     </foreign-key>
-    <foreign-key id="66" parent="15" name="fk_utilisateur_client1">
+    <foreign-key id="67" parent="15" name="fk_utilisateur_client1">
       <ColNames>client_id_client</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>client</RefTableName>

@@ -42,8 +42,17 @@ class Livreur extends Employe {
      */
     private  $dispo;
 
+    function __construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $droits, $idLivreur, $locationLat, $locationLong, $villeRatach, $dispo=1)
+    {
+        parent::__construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $droits, $idLivreur);
+        $this->setLocationLat($locationLat);
+        $this->setLocationLong($locationLong);
+        $this->setVilleRatach($villeRatach);
+        $this->setDispo($dispo);
+    }
 
-	/**
+
+    /**
 	 * @access public
 	 * @return float
 	 */
@@ -52,8 +61,13 @@ class Livreur extends Employe {
         return $this->locationLat;
 	}
 
+	public function getLivreurId()
+    {
+        return parent::getIdLivreur();
+    }
 
-	/**
+
+    /**
 	 * @access public
 	 * @return float
 	 */

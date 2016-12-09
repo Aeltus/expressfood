@@ -52,6 +52,7 @@ if($_SESSION['content'] == "vues/affichePanier.php"){
         $_SESSION['message-warning'] = 'Vous n\'avez aucun produit dans votre panier';
         $route = ServiceProvider::setRoute('menu');
         ServiceProvider::newPage($route);
+        die();
     }
 }
 
@@ -66,6 +67,7 @@ if (isset($_GET['route'])) {
 
     $_SESSION['content'] = ServiceProvider::router($_GET['route']);
     ServiceProvider::newPage();
+    die();
 
 }
 

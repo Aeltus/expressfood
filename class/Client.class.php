@@ -41,7 +41,16 @@ class Client extends Utilisateur {
 	 */
 	private  $ville;
 
-	/**
+	function __construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $numero, $rue, $codePostal, $ville)
+    {
+        parent::__construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible);
+        $this->setNumero($numero);
+        $this->setRue($rue);
+        $this->setCodePostal($codePostal);
+        $this->setVille($ville);
+    }
+
+    /**
 	 * @access public
 	 * @return int
 	 */

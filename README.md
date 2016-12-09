@@ -9,7 +9,7 @@ garder une certaine lisibilité, les fichiers ont été classés comme suit :
 
         - conf : contient la configuration du projet (BDD, API)
         
-        - vues : contient les vues
+        - vues : contient les vues (ces sont plutôt des controller/vues)
             - assets : les fichiers css, images et js
             
         - class : les classes en 3 catégories
@@ -22,4 +22,9 @@ garder une certaine lisibilité, les fichiers ont été classés comme suit :
         
         
         
+####2- Informations sur le fonctionnement :
+
+Les fonctions mail() présentes dans le code, sont commentées, mais fonctionnelles. Elles ont été commentés, car par défaut, Wamp server (serveur de développement que j'ai utilisé pour développer cette maquette en local), désactive cette fonction.
+Si on enlève les commentaires, et que la fonction n'est as activée en local, une exception sera levée.
+
 Bonne lecture :)

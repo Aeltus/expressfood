@@ -61,11 +61,14 @@ class commande {
 	 * @return void
 	 */
 
-	private  function __construct($idUtilisateur, $idProduit, $quantite, $refCommande) {
-        $this->idUtilisateur = $idUtilisateur;
-        $this->idProduit = $idProduit;
-        $this->quantite = $quantite;
-        $this->refCommande = $refCommande;
+	function __construct($idUtilisateur, $idProduit, $quantite, $refCommande, $IdLivreur=NULL, $dateCommande=NULL, $dateLivraison=NULL) {
+        $this->setIdUtilisateur($idUtilisateur);
+        $this->setIdProduit($idProduit);
+        $this->setQuantite($quantite);
+        $this->setRefCommande($refCommande);
+        $this->setIdLivreur($IdLivreur);
+        $this->setDateCommande($dateCommande);
+        $this->setDateLivraison($dateLivraison);
 	}
 
 
@@ -185,8 +188,8 @@ class commande {
      * @return void
      */
 
-    public  function setDateLivraison() {
-        $this->dateLivraison = new DateTime();
+    public  function setDateLivraison($dateLivraison) {
+        $this->dateLivraison = $dateLivraison;
     }
 
     /**
@@ -194,9 +197,16 @@ class commande {
      * @return void
      */
 
-    public  function setDateCommande() {
-        $this->dateCommande = new DateTime();
+    public  function setDateCommande($dateCommande) {
+        $this->dateCommande = $dateCommande;
     }
 
+    /**
+     * @param string $refCommande
+     */
+    public function setRefCommande($refCommande)
+    {
+        $this->refCommande = $refCommande;
+    }
 }
 ?>

@@ -58,12 +58,7 @@
             <p><?php echo $_SESSION['utilisateur']->getNumero().' '.$_SESSION['utilisateur']->getRue();?></p>
             <p><?php echo $_SESSION['utilisateur']->getCodePostal().' '.$_SESSION['utilisateur']->getVille();?></p>
             <p><?php echo 'mail : '.$_SESSION['utilisateur']->getMail();?></p>
-            <?php
-            if (!isset($_SESSION['refCommande'])){
-                $_SESSION['refCommande'] = $_SESSION['utilisateur']->getIdUtilisateur().'_'.date('h-i-s_j-m-y');
-            }
-            ?>
-            <br /><p><?php echo 'Votre commande portera le N° : '.$_SESSION['refCommande'];?></p>
+
 
         </div>
         <div class="col-md-6 text-center">
