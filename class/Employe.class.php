@@ -11,21 +11,21 @@ class Employe extends Utilisateur {
 	 * @var int
 	 * @access private
 	 */
-	private  $idEmploye;
+	private  $idEmploye = NULL;
 
 	/**
 	 * 
 	 * @var int
 	 * @access private
 	 */
-	private  $droits;
+	private  $droits = NULL;
 
 	/**
 	 * 
 	 * @var int
 	 * @access private
 	 */
-	private  $idLivreur;
+	private  $idLivreur = NULL;
 
 	function __construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $droits, $idLivreur=NULL)
     {

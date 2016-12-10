@@ -47,7 +47,7 @@ class UserManager extends DAO {
     $json = json_decode ($contenu_du_fichier);
 
 
-    // on cherche le plus proche
+    // on cherche le plus proche à moins de 20 min
     $duree = 1200; //20 min en sec
     $rangLivreurChoisi = -1; // initialise à -1 pour vérifier l'affectation d'un livreur
     $idLivreurChoisi = -1;
@@ -110,7 +110,7 @@ class UserManager extends DAO {
         $livreur = $this->pdoMysqlQuery($query);
         $donnees = $livreur->fetch();
 
-        return new Livreur($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], $donnees['livreur_id_livreur'], $donnees['location_lat'], $donnees['location_long'], $donnees['ville_ratach'], $donnees['dispo']);
+        return new Livreur($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], $donnees['mot_de_passe'], $donnees['employe_id_employe'], $donnees['client_id_client'], 1, $donnees['droits'], $donnees['livreur_id_livreur'], $donnees['location_lat'], $donnees['location_long'], $donnees['ville_ratach'], $donnees['dispo']);
 
 	}
 
@@ -234,8 +234,53 @@ class UserManager extends DAO {
      * Met à jour un utilisateur
 	 */
 
-	public final  function updateUser( $Utilisateur) {
+	public  function updateUser( $utilisateur) {
 
+        $this->pdoMysqlQuery('START TRANSACTION');
+
+        $query = "UPDATE utilisateur SET ";
+        $query .= " nom='".$utilisateur->getNom();
+        $query .= "', prenom='".$utilisateur->getPrenom();
+        $query .= "', mail='".$utilisateur->getMail();
+        $query .= "', mot_de_passe='".$utilisateur->getMotDePasse();
+        $query .= "', visible=".$utilisateur->getVisible();
+        $query .= " WHERE id_utilisateur=".$utilisateur->getIdUtilisateur();
+
+
+
+        $this->pdoMysqlQuery($query);
+
+        if ($utilisateur->getDroits() == NULL){
+            $query = "UPDATE client SET ";
+            $query .= " numero=".$utilisateur->getNumero();
+            $query .= ", rue='".$utilisateur->getRue();
+            $query .= "', code_postal=".$utilisateur->getCodePostal();
+            $query .= ", ville='".$utilisateur->getVille();
+            $query .= "', WHERE id_client=".$utilisateur->getIdClient();
+
+            $this->pdoMysqlQuery($query);
+
+        } else if ($utilisateur->getDroits() !== NULL){
+            $query = "UPDATE employe SET ";
+            $query .= " droits=".$utilisateur->getDroits();
+            $query .= " WHERE id_employe=".$utilisateur->getIdEmploye();
+
+            $this->pdoMysqlQuery($query);
+
+            if ($utilisateur->getDroits() == 3){
+                $query = "UPDATE livreur SET ";
+                $query .= " location_lat='".$utilisateur->getLocationLat();
+                $query .= "', location_long='".$utilisateur->getLocationLong();
+                $query .= "', ville_ratach='".$utilisateur->getVilleRatach();
+                $query .= "', dispo=".$utilisateur->getDispo();
+                $query .= " WHERE id_livreur=".$utilisateur->getLivreurId();
+
+                $this->pdoMysqlQuery($query);
+
+            }
+        }
+
+        $this->pdoMysqlQuery('COMMIT');
 	}
 
 

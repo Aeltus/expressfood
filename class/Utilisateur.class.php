@@ -42,21 +42,21 @@ class Utilisateur {
 	 * @var int
 	 * @access private
 	 */
-	private  $idEmploye;
+	private  $idEmploye = NULL;
 
 	/**
 	 * 
 	 * @var int
 	 * @access private
 	 */
-	private  $idClient;
+	private  $idClient = NULL;
 
     /**
      *
      * @var boolean
      * @access private
      */
-    private  $visible;
+    private  $visible = "1";
 
 
     function __construct($idUtilisateur=NULL, $nom, $prenom, $mail, $motDePasse=NULL, $idEmploye=NULL, $idClient=NULL, $visible=1)
@@ -213,7 +213,7 @@ class Utilisateur {
 	 * @return void
 	 */
 
-	public function setIdEmploye($idEmploye) {
+	public function setIdEmploye($idEmploye=NULL) {
         $this->idEmploye = $idEmploye;
 	}
 
@@ -223,7 +223,7 @@ class Utilisateur {
 	 * @param int $idCLient 
 	 */
 
-	public function setIdClient($idCLient) {
+	public function setIdClient($idCLient=NULL) {
         $this->idClient = $idCLient;
 	}
 

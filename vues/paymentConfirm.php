@@ -19,6 +19,7 @@ $infosLivraison = $req->trouveLivreur($_SESSION['utilisateur']);
 $livreurObject = new UserManager();
 $livreur = $livreurObject->getLivreurById($infosLivraison['livreur']);
 
+
 /*====================================================================================================================*/
 
 /* Envoie un mail au livreur sélectionné
@@ -34,16 +35,23 @@ $message .= "<div width='600px'><table><tr> <th>Dénomination</th><th>Quantité<
 
             /* Récupération des informations pour chaque élément du panier + création du tableau
             ==========================================================================================================*/
-            $totalPayer = 0;
+
+            //Variables servant au stockage des informations de commande pour stockage en BDD
+            $commandArray = [];
+            $refCommande = $_SESSION['utilisateur']->getIdUtilisateur().date('hisjmy');
+            $now = new DateTime('NOW');
+
             foreach($_SESSION['panier'] as $idProduit => $qtiteProduit){
 
-
+                // constitue l'affichage du tableau récapitulatif de la commande
                 $req = new ProductManager();
                 $reponse = $req->getProduct($idProduit);
                 $produit = $reponse->fetch();
-
                 $message .="<tr><td>".$produit['nom']."</td><td>".$qtiteProduit."</td></tr>";
 
+                // Enregistrement de la commande sous forme de tableau d'objets pour enregistrement utltérieur en BDD
+                $curentCommand = new commande($_SESSION['utilisateur']->getIdUtilisateur(), $idProduit, $qtiteProduit, $refCommande, $livreur->getLivreurId(), $now);
+                $commandArray[] = $curentCommand;
             }
 
 $message .= "</table></div><br />";
@@ -59,21 +67,21 @@ $message .= "<p>L' équipe d'Express Food</p>";
 $_SESSION['message-ok'] = "Votre livreur : ".$livreur->getNom()." ".$livreur->getPrenom()." se trouve actuellement à ".$infosLivraison['distance']." et sera chez vous d'ici ".$infosLivraison['duree'];
 
 
-$commandArray = [];
-$refCommande = $_SESSION['utilisateur']->getIdUtilisateur()."-".date('h-i-s_j-m-y');
-$now = new DateTime('NOW');
-
-foreach($_SESSION['panier'] as $idProduit => $qtiteProduit) {
-
-    $curentCommand = new commande($_SESSION['utilisateur']->getIdUtilisateur(), $idProduit, $qtiteProduit, $refCommande, $livreur->getLivreurId(), $now);
-    $commandArray[] = $curentCommand;
-
-}
-
 $req = new CommandManager();
 $req->addCommand($commandArray);
 
 /*====================================================================================================================*/
+
+
+/* Met à jour le livreur sélectionné en BDD pour le définir comme non disponible
+======================================================================================================================*/
+
+$livreur->setDispo('0');
+$req = new UserManager();
+$req->updateUser($livreur);
+
+/*====================================================================================================================*/
+
 
 /* Efface le panier du client, redirige vers le menu
 ======================================================================================================================*/
@@ -83,10 +91,3 @@ ServiceProvider::newPage(ServiceProvider::setRoute('menu&action=deletePanier'));
 
 
 /*====================================================================================================================*/
-
-/*
- * TODO
- *
- * Lors de la commande définir le livreur choisi comme non disponible
- *
- */

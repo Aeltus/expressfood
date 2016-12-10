@@ -11,28 +11,28 @@ class Livreur extends Employe {
 	 * @var int
 	 * @access private
 	 */
-	private  $idLivreur;
+	private  $idLivreur = NULL;
 
 	/**
 	 * 
 	 * @var float
 	 * @access private
 	 */
-	private  $locationLat;
+	private  $locationLat = NULL;
 
 	/**
 	 * 
 	 * @var float
 	 * @access private
 	 */
-	private  $locationLong;
+	private  $locationLong = NULL;
 
 	/**
 	 * 
 	 * @var string
 	 * @access private
 	 */
-	private  $villeRatach;
+	private  $villeRatach = NULL;
 
 
     /**
@@ -40,7 +40,7 @@ class Livreur extends Employe {
      * @var bool
      * @access private
      */
-    private  $dispo;
+    private  $dispo = NULL;
 
     function __construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $droits, $idLivreur, $locationLat, $locationLong, $villeRatach, $dispo=1)
     {

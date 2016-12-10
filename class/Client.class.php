@@ -11,35 +11,35 @@ class Client extends Utilisateur {
 	 * @var int
 	 * @access private
 	 */
-	private  $idClient;
+	private  $idClient = NULL;
 
 	/**
 	 * 
 	 * @var int
 	 * @access private
 	 */
-	private  $numero;
+	private  $numero = NULL;
 
 	/**
 	 * 
 	 * @var string
 	 * @access private
 	 */
-	private  $rue;
+	private  $rue = NULL;
 
 	/**
 	 * 
 	 * @var int
 	 * @access private
 	 */
-	private  $codePostal;
+	private  $codePostal = NULL;
 
 	/**
 	 * 
 	 * @var string
 	 * @access private
 	 */
-	private  $ville;
+	private  $ville = NULL;
 
 	function __construct($idUtilisateur, $nom, $prenom, $mail, $motDePasse, $idEmploye, $idClient, $visible, $numero, $rue, $codePostal, $ville)
     {
