@@ -162,7 +162,7 @@ class UserManager extends DAO {
             if (isset($donnees['client_id_client'])) {
 
                 //Si c'est un client, on instancie une entité client
-                $curentUser = new Client($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, NULL, $donnees['client_id_client'], 1, $donnees['numero'], $donnees['rue'], $donnees['code_postal'], $donnees['ville']);
+                $curentUser = new Client($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], $donnees['mot_de_passe'], NULL, $donnees['client_id_client'], 1, $donnees['numero'], $donnees['rue'], $donnees['code_postal'], $donnees['ville']);
                 $_SESSION['role'] = 'client';
 
 
@@ -173,13 +173,13 @@ class UserManager extends DAO {
                 if(isset($donnees['livreur_id_livreur'])){
 
                     // si c'est un  livreur on instancie une entité Livreur
-                    $curentUser = new Livreur($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], $donnees['livreur_id_livreur'], $donnees['location_lat'], $donnees['location_long'], $donnees['ville_ratach'], $donnees['dispo']);
+                    $curentUser = new Livreur($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], $donnees['mot_de_passe'], $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], $donnees['livreur_id_livreur'], $donnees['location_lat'], $donnees['location_long'], $donnees['ville_ratach'], $donnees['dispo']);
 
 
                 } else {
 
                     // sinon, on définit l'entité comme instance de employé
-                    $curentUser = new Employe($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], NULL, $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], NULL);
+                    $curentUser = new Employe($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], $donnees['mot_de_passe'], $donnees['employe_id_employe'], NULL, 1, $donnees['droits'], NULL);
 
                 }
 
@@ -250,7 +250,7 @@ class UserManager extends DAO {
 
         $this->pdoMysqlQuery($query);
 
-        if ($utilisateur->getDroits() == NULL){
+        if (!method_exists($utilisateur, 'getDroits')){
             $query = "UPDATE client SET ";
             $query .= " numero=".$utilisateur->getNumero();
             $query .= ", rue='".$utilisateur->getRue();
@@ -260,7 +260,7 @@ class UserManager extends DAO {
 
             $this->pdoMysqlQuery($query);
 
-        } else if ($utilisateur->getDroits() !== NULL){
+        } else if (method_exists($utilisateur, 'getDroits')){
             $query = "UPDATE employe SET ";
             $query .= " droits=".$utilisateur->getDroits();
             $query .= " WHERE id_employe=".$utilisateur->getIdEmploye();
@@ -307,6 +307,7 @@ class UserManager extends DAO {
         return $this->pdoMysqlQuery($query);
 
     }
+
 
 
 }

@@ -43,6 +43,7 @@
         <input type="password" placeholder="mot de passe" name="password" required>
         <input type="submit" value="Valider">
     </form>
+
 </div>
 
 <header class="row">

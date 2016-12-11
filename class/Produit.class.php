@@ -63,12 +63,13 @@ class Produit {
 	 * @return void
 	 */
 
-	public  function __construct($idProduit = NULL, $nom, $description, $photo, $visible = 1, $type) {
+	public  function __construct($idProduit = NULL, $nom, $description, $photo, $visible = 1, $prix, $type) {
         $this->idProduit = $idProduit;
         $this->setNom($nom);
         $this->setDescription($description);
         $this->setPhoto($photo);
         $this->setVisible($visible);
+        $this->setPrix($prix);
         $this->setType($type);
 	}
 
@@ -98,7 +99,7 @@ class Produit {
 	 * @return string
 	 */
 
-	public  function getDecription() {
+	public  function getDescription() {
         return $this->description;
 	}
 

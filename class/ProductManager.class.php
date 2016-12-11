@@ -17,7 +17,9 @@ class ProductManager extends DAO {
 	 */
 
 	public  function getProduct($idProduit) {
-        return $this->pdoMysqlQuery("SELECT * FROM produits WHERE id_produit=".$idProduit);
+        $produitPDO = $this->pdoMysqlQuery("SELECT * FROM produits WHERE id_produit=".$idProduit);
+        $produit = $produitPDO->fetch();
+        return new Produit($produit['id_produit'], $produit['nom'],$produit['description'], $produit['photo'], $produit['visible'], $produit['prix'], $produit['type']);
 	}
 
 
@@ -29,7 +31,15 @@ class ProductManager extends DAO {
 	 */
 
 	public  function getProducts() {
-       return $this->pdoMysqlQuery("SELECT * FROM produits WHERE visible='1' ORDER BY type DESC");
+       $produitsPDO = $this->pdoMysqlQuery("SELECT * FROM produits WHERE visible='1' ORDER BY type DESC");
+       $produits = [];
+
+       while ($produit = $produitsPDO->fetch()){
+           $produitObject = new Produit($produit['id_produit'], $produit['nom'],$produit['description'], $produit['photo'], $produit['visible'], $produit['prix'], $produit['type']);
+           $produits[] = $produitObject;
+       }
+
+       return $produits;
 	}
 
 

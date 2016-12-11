@@ -6,6 +6,19 @@
 
 class CommandManager extends DAO {
 
+    public function getCommandsByIdClient($idClient)
+    {
+        $query = "SELECT * FROM commande WHERE utilisateur_id_utilisateur=".$idClient." ORDER BY date_commande DESC";
+
+        $commandesPDO = $this->pdoMysqlQuery($query);
+        $commandesArray = [];
+        while ($commande = $commandesPDO->fetch()){
+            $commandesArray[] = $this->commandObjectCreator($commande);
+        }
+
+        return $commandesArray;
+    }
+
 
 	/**
 	 * @access public
@@ -15,7 +28,7 @@ class CommandManager extends DAO {
      * Récupère une commande dans la BDD
 	 */
 
-	public  function getCommand($refCommande) {
+	public  function getCommandByRef($refCommande) {
 
 	}
 
@@ -85,15 +98,20 @@ class CommandManager extends DAO {
 	}
 
     /**
-     * @access public
-     * @param string $refCommande
-     * @return void
-     *
-     *Associe un livreur à une commande
+     * @param array $commande
+     * @return string
      */
+    public function getStatut($commande){
+        if ($commande->getDateLivraison() != NULL){
+            $statut = "Livré le : ".$commande->getDateLivraison();
+        } else {
+            $statut = "Livraison en cours";
+        }
+        return $statut;
+    }
 
-    public  function attribuLivreur($refCommande, $idLivreur) {
-
+    public function commandObjectCreator($commande){
+       return new commande($commande['utilisateur_id_utilisateur'], $commande['produits_id_produit'], $commande['quantite'], $commande['ref_commande'], $commande['livreur_id_livreur'], $commande['date_commande'],$commande['date_livraison']);
     }
 
 

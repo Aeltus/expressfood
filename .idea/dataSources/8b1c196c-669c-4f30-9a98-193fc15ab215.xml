@@ -72,21 +72,31 @@
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="27" parent="11" name="fk_commande_livreur1_idx">
+    <column id="27" parent="11" name="date_commande">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="28" parent="11" name="date_livraison">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="29" parent="11" name="fk_commande_livreur1_idx">
       <ColNames>livreur_id_livreur</ColNames>
     </index>
-    <index id="28" parent="11" name="fk_utilisateur_has_produits_produits1_idx">
+    <index id="30" parent="11" name="fk_utilisateur_has_produits_produits1_idx">
       <ColNames>produits_id_produit</ColNames>
     </index>
-    <index id="29" parent="11" name="fk_utilisateur_has_produits_utilisateur1_idx">
+    <index id="31" parent="11" name="fk_utilisateur_has_produits_utilisateur1_idx">
       <ColNames>utilisateur_id_utilisateur</ColNames>
     </index>
-    <key id="30" parent="11" name="PRIMARY">
+    <key id="32" parent="11" name="PRIMARY">
       <ColNames>utilisateur_id_utilisateur
-produits_id_produit</ColNames>
+produits_id_produit
+ref_commande</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="31" parent="11" name="fk_utilisateur_has_produits_utilisateur1">
+    <foreign-key id="33" parent="11" name="fk_utilisateur_has_produits_utilisateur1">
       <ColNames>utilisateur_id_utilisateur</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>utilisateur</RefTableName>
@@ -94,7 +104,7 @@ produits_id_produit</ColNames>
       <OnUpdate>no-action</OnUpdate>
       <OnDelete>no-action</OnDelete>
     </foreign-key>
-    <foreign-key id="32" parent="11" name="fk_utilisateur_has_produits_produits1">
+    <foreign-key id="34" parent="11" name="fk_utilisateur_has_produits_produits1">
       <ColNames>produits_id_produit</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>produits</RefTableName>
@@ -102,7 +112,7 @@ produits_id_produit</ColNames>
       <OnUpdate>no-action</OnUpdate>
       <OnDelete>no-action</OnDelete>
     </foreign-key>
-    <foreign-key id="33" parent="11" name="fk_commande_livreur1">
+    <foreign-key id="35" parent="11" name="fk_commande_livreur1">
       <ColNames>livreur_id_livreur</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>livreur</RefTableName>
@@ -110,29 +120,29 @@ produits_id_produit</ColNames>
       <OnUpdate>no-action</OnUpdate>
       <OnDelete>no-action</OnDelete>
     </foreign-key>
-    <column id="34" parent="12" name="id_employe">
+    <column id="36" parent="12" name="id_employe">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="35" parent="12" name="droits">
+    <column id="37" parent="12" name="droits">
       <Position>2</Position>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="12" name="livreur_id_livreur">
+    <column id="38" parent="12" name="livreur_id_livreur">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="37" parent="12" name="fk_employe_livreur1_idx">
+    <index id="39" parent="12" name="fk_employe_livreur1_idx">
       <ColNames>livreur_id_livreur</ColNames>
     </index>
-    <key id="38" parent="12" name="PRIMARY">
+    <key id="40" parent="12" name="PRIMARY">
       <ColNames>id_employe</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="39" parent="12" name="fk_employe_livreur1">
+    <foreign-key id="41" parent="12" name="fk_employe_livreur1">
       <ColNames>livreur_id_livreur</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>livreur</RefTableName>
@@ -140,131 +150,137 @@ produits_id_produit</ColNames>
       <OnUpdate>no-action</OnUpdate>
       <OnDelete>no-action</OnDelete>
     </foreign-key>
-    <column id="40" parent="13" name="id_livreur">
+    <column id="42" parent="13" name="id_livreur">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="41" parent="13" name="location_lat">
+    <column id="43" parent="13" name="location_lat">
       <Position>2</Position>
       <DataType>float|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="13" name="location_long">
+    <column id="44" parent="13" name="location_long">
       <Position>3</Position>
       <DataType>float|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="13" name="ville_ratach">
+    <column id="45" parent="13" name="ville_ratach">
       <Position>4</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="44" parent="13" name="dispo">
+    <column id="46" parent="13" name="dispo">
       <Position>5</Position>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <key id="45" parent="13" name="PRIMARY">
+    <key id="47" parent="13" name="PRIMARY">
       <ColNames>id_livreur</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="46" parent="14" name="id_produit">
+    <column id="48" parent="14" name="id_produit">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="47" parent="14" name="nom">
+    <column id="49" parent="14" name="nom">
       <Position>2</Position>
       <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="14" name="description">
+    <column id="50" parent="14" name="description">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="14" name="photo">
+    <column id="51" parent="14" name="photo">
       <Position>4</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="50" parent="14" name="visible">
+    <column id="52" parent="14" name="visible">
       <Position>5</Position>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <column id="51" parent="14" name="prix">
+    <column id="53" parent="14" name="prix">
       <Position>6</Position>
       <DataType>float|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="14" name="type">
+    <column id="54" parent="14" name="type">
       <Position>7</Position>
       <DataType>tinyint(1)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <key id="53" parent="14" name="PRIMARY">
+    <key id="55" parent="14" name="PRIMARY">
       <ColNames>id_produit</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="54" parent="15" name="id_utilisateur">
+    <column id="56" parent="15" name="id_utilisateur">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="55" parent="15" name="nom">
+    <column id="57" parent="15" name="nom">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="15" name="prenom">
+    <column id="58" parent="15" name="prenom">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="15" name="mail">
+    <column id="59" parent="15" name="mail">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="15" name="mot_de_passe">
+    <column id="60" parent="15" name="mot_de_passe">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="59" parent="15" name="employe_id_employe">
+    <column id="61" parent="15" name="employe_id_employe">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="60" parent="15" name="client_id_client">
+    <column id="62" parent="15" name="client_id_client">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="61" parent="15" name="fk_utilisateur_client1_idx">
+    <column id="63" parent="15" name="visible">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <index id="64" parent="15" name="fk_utilisateur_client1_idx">
       <ColNames>client_id_client</ColNames>
     </index>
-    <index id="62" parent="15" name="fk_utilisateur_employe1_idx">
+    <index id="65" parent="15" name="fk_utilisateur_employe1_idx">
       <ColNames>employe_id_employe</ColNames>
     </index>
-    <index id="63" parent="15" name="mail">
+    <index id="66" parent="15" name="mail">
       <ColNames>mail</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="64" parent="15" name="PRIMARY">
+    <key id="67" parent="15" name="PRIMARY">
       <ColNames>id_utilisateur</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="65" parent="15" name="mail">
+    <key id="68" parent="15" name="mail">
       <ColNames>mail</ColNames>
       <UnderlyingIndexName>mail</UnderlyingIndexName>
     </key>
-    <foreign-key id="66" parent="15" name="fk_utilisateur_employe1">
+    <foreign-key id="69" parent="15" name="fk_utilisateur_employe1">
       <ColNames>employe_id_employe</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>employe</RefTableName>
@@ -272,7 +288,7 @@ produits_id_produit</ColNames>
       <OnUpdate>no-action</OnUpdate>
       <OnDelete>no-action</OnDelete>
     </foreign-key>
-    <foreign-key id="67" parent="15" name="fk_utilisateur_client1">
+    <foreign-key id="70" parent="15" name="fk_utilisateur_client1">
       <ColNames>client_id_client</ColNames>
       <RefSchemaName>express_food</RefSchemaName>
       <RefTableName>client</RefTableName>

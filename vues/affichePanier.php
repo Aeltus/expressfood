@@ -21,15 +21,15 @@
 
 
                 $req = new ProductManager();
-                $reponse = $req->getProduct($idProduit);
-                $produit = $reponse->fetch();
-                $payerProduit = $produit['prix'] * $qtiteProduit;
+                $produit = $req->getProduct($idProduit);
+
+                $payerProduit = $produit->getPrix() * $qtiteProduit;
                 $totalPayer += $payerProduit;
             ?>
 
             <tr>
-                <td><?php echo $produit['nom']; ?></td>
-                <td><?php echo sprintf('%.2f', $produit['prix']); ?></td>
+                <td><?php echo $produit->getNom(); ?></td>
+                <td><?php echo sprintf('%.2f', $produit->getPrix()); ?></td>
                 <td><?php echo $qtiteProduit; ?></td>
                 <td><?php echo $payerProduit; ?></td>
             </tr>

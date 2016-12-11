@@ -45,9 +45,9 @@ $message .= "<div width='600px'><table><tr> <th>Dénomination</th><th>Quantité<
 
                 // constitue l'affichage du tableau récapitulatif de la commande
                 $req = new ProductManager();
-                $reponse = $req->getProduct($idProduit);
-                $produit = $reponse->fetch();
-                $message .="<tr><td>".$produit['nom']."</td><td>".$qtiteProduit."</td></tr>";
+                $produit = $req->getProduct($idProduit);
+
+                $message .="<tr><td>".$produit->getNom()."</td><td>".$qtiteProduit."</td></tr>";
 
                 // Enregistrement de la commande sous forme de tableau d'objets pour enregistrement utltérieur en BDD
                 $curentCommand = new commande($_SESSION['utilisateur']->getIdUtilisateur(), $idProduit, $qtiteProduit, $refCommande, $livreur->getLivreurId(), $now);
