@@ -5,7 +5,7 @@
     <div class="container">
 
         <div class="row text-center">
-            <a href="<?php echo ServiceProvider::setRoute('mentions'); ?>">MENTIONS LEGALES</a><span> | Pour votre santé, mangez équilibré.</span>|<a href="<?php echo ServiceProvider::setRoute('accueil'); ?>&action=deconnecter">Tuer la session</a>
+            <a href="<?php echo ServiceProvider::setRoute('mentions'); ?>">MENTIONS LEGALES</a><span> | Pour votre santé, mangez équilibré.</span>
         </div>
     </div>
 

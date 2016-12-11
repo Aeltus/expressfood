@@ -75,7 +75,14 @@ class ServiceProvider
 
             $identification = new UserManager();
             $_SESSION['utilisateur'] = $identification->identifyUser($_POST['mail'], $_POST['password']);
-            ServiceProvider::newPage();
+            //si l'utilisateur est un employe
+            if(method_exists($_SESSION['utilisateur'], 'getDroits')){
+                $page = "adminAccueil";
+            } else { // sinon, l'utilisateur est un client
+                $page = 'accueil';
+            }
+
+            ServiceProvider::newPage(ServiceProvider::setRoute($page));
 
 
         } else if($action == "addPanier"){

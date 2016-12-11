@@ -66,34 +66,73 @@
 
                     <div class="col-md-12 h100">
                         <ul class="nav navbar-nav">
-                            <li class="menu-btn"><a href="<?php echo ServiceProvider::setRoute('accueil'); ?>">ACCUEIL</a></li>
-                            <li class="menu-btn"><a href="<?php echo ServiceProvider::setRoute('menu'); ?>">NOS MENUS</a></li>
+
+
 
                             <!-- Affichage conditionnel des options du menu
                             =============================================================================================-->
                             <?php
+                            // Menu utilisateur anonyme
                             if($_SESSION['role'] == "anonyme"){
+                                echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("accueil").'">ACCUEIL</a></li>';
+                                echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("menu").'">NOS MENUS</a></li>';
                                 echo'<li class="menu-btn"><a href="#" class="identification">S\'IDENTIFIER</a></li>';
-                            } else if($_SESSION['role']=='admin' or $_SESSION['role']=='service' or $_SESSION['role']=='livreur'){
-                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('accueil').'">Administration</a></li>';
-                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('accueil').'&action=deconnecter">(Se déconnecter)</a></li>';
-                            } else if($_SESSION['role']=='client'){
-                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('monCompte').'">Mon Compte</a></li>';
-                                echo'<li class="menu-btn"><a href="'.ServiceProvider::setRoute('accueil').'&action=deconnecter">(Se déconnecter)</a></li>';
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('affichePanier') . '">Panier / Commander (';
+
+                                if (isset($_SESSION['panier'])) {
+                                    echo count($_SESSION['panier']);
+                                } else {
+                                    echo "0";
+                                }
+
+                                echo ')</a></li>';
+
+                            // Menu client
+                            } else if($_SESSION['role']=='client') {
+                                echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("accueil").'">ACCUEIL</a></li>';
+                                echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("menu").'">NOS MENUS</a></li>';
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('monCompte') . '">Mon Compte</a></li>';
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('accueil') . '&action=deconnecter">(Se déconnecter)</a></li>';
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('affichePanier') . '">Panier / Commander (';
+
+                                if (isset($_SESSION['panier'])) {
+                                    echo count($_SESSION['panier']);
+                                } else {
+                                    echo "0";
+                                }
+
+                                echo ')</a></li>';
+
+                                // Menu commun employe
+                            } else {
+
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('adminAccueil') . '">Accueil</a></li>';
+
+                                // Menu administrateur
+                                if($_SESSION['role']=='admin') {
+
+                                    echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('gestionEmployes') . '">Gestion des employés</a></li>';
+                                    echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('gestionVentes') . '">Gestion des ventes</a></li>';
+
+                                    // Menu service client
+                                } else if($_SESSION['role']=='service') {
+
+                                    echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('gestionClients') . '">Gestion des clients</a></li>';
+                                    echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('gestionProduits') . '">Gestion des produits</a></li>';
+
+                                    // Menu livreur
+                                } else if ($_SESSION['role']=='livreur'){
+
+                                    echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('livraisons') . '">Mes livraisons</a></li>';
+
+                                }
+
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('monCompte') . '">Mon Compte</a></li>';
+                                echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('accueil') . '&action=deconnecter">(Se déconnecter)</a></li>';
+
                             }
-
                             ?>
-                            <li class="menu-btn"><a href="<?php echo ServiceProvider::setRoute('affichePanier'); ?>">Panier / Commander (
-                                    <?php
 
-                                    if (isset($_SESSION['panier'])){
-                                        echo count($_SESSION['panier']);
-                                    } else {
-                                        echo "0";
-                                    }
-
-
-                                    ?> )</a></li>
                         </ul>
                     </div>
                 </div>

@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9900f11c-cf82-455f-bf85-04fa4b6228a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/updateInfos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/updatePassword.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/userUpdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8b1c196c-669c-4f30-9a98-193fc15ab215.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8b1c196c-669c-4f30-9a98-193fc15ab215.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/adminAccueil.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/livraisons.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/updateCommandStatus.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/CommandManager.class.php" afterPath="$PROJECT_DIR$/class/CommandManager.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/ProductManager.class.php" afterPath="$PROJECT_DIR$/class/ProductManager.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Produit.class.php" afterPath="$PROJECT_DIR$/class/Produit.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/ServiceProvider.class.php" afterPath="$PROJECT_DIR$/class/ServiceProvider.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/UserManager.class.php" afterPath="$PROJECT_DIR$/class/UserManager.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/affichePanier.php" afterPath="$PROJECT_DIR$/vues/affichePanier.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/footer.php" afterPath="$PROJECT_DIR$/vues/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/header.php" afterPath="$PROJECT_DIR$/vues/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/menu.php" afterPath="$PROJECT_DIR$/vues/menu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/moncompte.php" afterPath="$PROJECT_DIR$/vues/moncompte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/paymentConfirm.php" afterPath="$PROJECT_DIR$/vues/paymentConfirm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/userUpdate.php" afterPath="$PROJECT_DIR$/vues/userUpdate.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,21 +132,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="updatePassword.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/updatePassword.html">
+      <file leaf-file-name="CommandManager.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="-103">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <marker date="1481479256084" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
+                <marker date="1481479256084" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
+                <marker date="1481479256084" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moncompte.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+      <file leaf-file-name="livraisons.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/livraisons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="189" lean-forward="false" selection-start-line="13" selection-start-column="189" selection-end-line="13" selection-end-column="189" />
+            <state relative-caret-position="544">
+              <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+                <marker date="1481476608761" expanded="true" signature="145:189" ph="..." />
+                <marker date="1481476608761" expanded="true" signature="1060:1299" ph="..." />
+                <marker date="1481476608761" expanded="true" signature="1060:1317" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateCommandStatus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/updateCommandStatus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commande.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/commande.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -168,31 +214,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utilisateur.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/Utilisateur.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-474">
-              <caret line="120" column="5" lean-forward="false" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="userUpdate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+            <state relative-caret-position="427">
+              <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
               </folding>
@@ -210,11 +236,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/404.html">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vues/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+            <state relative-caret-position="355">
+              <caret line="87" column="50" lean-forward="false" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -223,20 +249,31 @@
       <file leaf-file-name="UserManager.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/UserManager.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2943">
-              <caret line="309" column="0" lean-forward="true" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+            <state relative-caret-position="-84">
+              <caret line="260" column="8" lean-forward="false" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="50" />
               <folding>
-                <marker date="1481463693595" expanded="true" signature="865:866" ph="SELECT * FRO... liveur" />
-                <marker date="1481463693595" expanded="true" signature="3036:3061" ph="SELECT * FRO... utilisateur" />
-                <marker date="1481463693595" expanded="true" signature="3425:3426" ph="SELECT * FRO... livreur" />
-                <marker date="1481463693595" expanded="true" signature="4005:4070" ph="SELECT * FRO... livreur" />
-                <marker date="1481463693595" expanded="true" signature="7299:7321" ph="UPDATE utili... " />
-                <marker date="1481463693595" expanded="true" signature="7816:7833" ph="UPDATE clien... " />
-                <marker date="1481463693595" expanded="true" signature="8285:8303" ph="UPDATE emplo... " />
-                <marker date="1481463693595" expanded="true" signature="8559:8574" ph="UPDATE livre... " />
-                <marker date="1481463693595" expanded="true" signature="8559:8577" ph="UPDATE livre... " />
-                <marker date="1481463693595" expanded="true" signature="9245:9270" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481476026948" expanded="true" signature="865:866" ph="SELECT * FRO... liveur" />
+                <marker date="1481476026948" expanded="true" signature="3005:3030" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481476026948" expanded="true" signature="3790:3815" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481476026948" expanded="true" signature="4179:4180" ph="SELECT * FRO... livreur" />
+                <marker date="1481476026948" expanded="true" signature="4759:4824" ph="SELECT * FRO... livreur" />
+                <marker date="1481476026948" expanded="true" signature="8053:8075" ph="UPDATE utili... " />
+                <marker date="1481476026948" expanded="true" signature="8570:8587" ph="UPDATE clien... " />
+                <marker date="1481476026948" expanded="true" signature="9039:9057" ph="UPDATE emplo... " />
+                <marker date="1481476026948" expanded="true" signature="9316:9331" ph="UPDATE livre... " />
+                <marker date="1481476026948" expanded="true" signature="9316:9334" ph="UPDATE livre... " />
+                <marker date="1481476026948" expanded="true" signature="10003:10028" ph="SELECT * FRO... utilisateur" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paymentConfirm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -281,7 +318,6 @@
         <option value="$PROJECT_DIR$/class/Router.class.php" />
         <option value="$PROJECT_DIR$/vues/deconnecte.php" />
         <option value="$PROJECT_DIR$/vues/router.php" />
-        <option value="$PROJECT_DIR$/vues/footer.php" />
         <option value="$PROJECT_DIR$/class/DAO.class.php" />
         <option value="$PROJECT_DIR$/conf/config.json" />
         <option value="$PROJECT_DIR$/sos.php" />
@@ -296,19 +332,23 @@
         <option value="$PROJECT_DIR$/class/ProductManager.class.php" />
         <option value="$PROJECT_DIR$/vues/menu.php" />
         <option value="$PROJECT_DIR$/class/Produit.class.php" />
-        <option value="$PROJECT_DIR$/class/CommandManager.class.php" />
-        <option value="$PROJECT_DIR$/class/ServiceProvider.class.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8b1c196c-669c-4f30-9a98-193fc15ab215/console.sql" />
         <option value="$PROJECT_DIR$/vues/passwordReset.php" />
-        <option value="$PROJECT_DIR$/class/UserManager.class.php" />
         <option value="$PROJECT_DIR$/vues/updatePassword.html" />
-        <option value="$PROJECT_DIR$/vues/header.php" />
         <option value="$PROJECT_DIR$/vues/updateUser.php" />
         <option value="$PROJECT_DIR$/vues/404.html" />
         <option value="$PROJECT_DIR$/vues/updateInfos.php" />
-        <option value="$PROJECT_DIR$/vues/userUpdate.php" />
+        <option value="$PROJECT_DIR$/vues/footer.php" />
+        <option value="$PROJECT_DIR$/class/ServiceProvider.class.php" />
+        <option value="$PROJECT_DIR$/vues/adminAccueil.html" />
         <option value="$PROJECT_DIR$/vues/moncompte.php" />
+        <option value="$PROJECT_DIR$/vues/userUpdate.php" />
+        <option value="$PROJECT_DIR$/class/UserManager.class.php" />
+        <option value="$PROJECT_DIR$/vues/livraisons.php" />
+        <option value="$PROJECT_DIR$/class/CommandManager.class.php" />
+        <option value="$PROJECT_DIR$/vues/updateCommandStatus.php" />
+        <option value="$PROJECT_DIR$/vues/header.php" />
       </list>
     </option>
   </component>
@@ -536,12 +576,12 @@
       <workItem from="1481364067803" duration="3791000" />
       <workItem from="1481368012044" duration="17165000" />
       <workItem from="1481398527157" duration="7957000" />
-      <workItem from="1481453902847" duration="3998000" />
+      <workItem from="1481453902847" duration="13949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104757000" />
+    <option name="totallyTimeSpent" value="114708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -553,13 +593,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14069264" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17099567" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -570,7 +611,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17099567" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -582,12 +622,13 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1417749" sideWeight="0.50852877" order="10" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17099567" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18506494" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.141258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18506494" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -605,15 +646,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue/templates/accueil.html" />
-    <entry file="file://$PROJECT_DIR$/config/conf.php" />
-    <entry file="file://$PROJECT_DIR$/vue/layer.php" />
-    <entry file="file://$PROJECT_DIR$/.htaccess" />
     <entry file="file://$PROJECT_DIR$/web/index.php" />
     <entry file="file://$PROJECT_DIR$/composer.json" />
     <entry file="file://$PROJECT_DIR$/app/routes.php" />
@@ -687,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/accueil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.employe">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -756,18 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <marker date="1481389317021" expanded="true" signature="284:324" ph="SELECT * FRO... produits" />
-            <marker date="1481389317021" expanded="true" signature="769:791" ph="SELECT * FRO... produits" />
-            <marker date="1481389317021" expanded="true" signature="769:828" ph="SELECT * FRO... produits" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -784,52 +802,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="147" lean-forward="false" selection-start-line="7" selection-start-column="147" selection-end-line="7" selection-end-column="228" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/affichePanier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/commande.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="103" column="27" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-          <folding>
-            <marker date="1481392635760" expanded="true" signature="150:178" ph="SELECT * FRO... commande" />
-            <marker date="1481392635760" expanded="true" signature="150:206" ph="SELECT * FRO... commande" />
-            <marker date="1481392635760" expanded="true" signature="150:243" ph="SELECT * FRO... commande" />
-            <marker date="1481392635760" expanded="true" signature="150:247" ph="SELECT * FRO... commande" />
-            <marker date="1481392635760" expanded="true" signature="150:248" ph="SELECT * FRO... commande" />
-            <marker date="1481392635760" expanded="true" signature="1055:1082" ph="INSERT INTO commande... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,34 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/ServiceProvider.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/passwordReset.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -893,25 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/UserManager.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2943">
-          <caret line="309" column="0" lean-forward="true" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding>
-            <marker date="1481463693595" expanded="true" signature="865:866" ph="SELECT * FRO... liveur" />
-            <marker date="1481463693595" expanded="true" signature="3036:3061" ph="SELECT * FRO... utilisateur" />
-            <marker date="1481463693595" expanded="true" signature="3425:3426" ph="SELECT * FRO... livreur" />
-            <marker date="1481463693595" expanded="true" signature="4005:4070" ph="SELECT * FRO... livreur" />
-            <marker date="1481463693595" expanded="true" signature="7299:7321" ph="UPDATE utili... " />
-            <marker date="1481463693595" expanded="true" signature="7816:7833" ph="UPDATE clien... " />
-            <marker date="1481463693595" expanded="true" signature="8285:8303" ph="UPDATE emplo... " />
-            <marker date="1481463693595" expanded="true" signature="8559:8574" ph="UPDATE livre... " />
-            <marker date="1481463693595" expanded="true" signature="8559:8577" ph="UPDATE livre... " />
-            <marker date="1481463693595" expanded="true" signature="9245:9270" ph="SELECT * FRO... utilisateur" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/Utilisateur.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-474">
@@ -928,6 +862,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vues/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/accueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/adminAccueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ServiceProvider.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.livreur">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <marker date="1481389317021" expanded="true" signature="284:324" ph="SELECT * FRO... produits" />
+            <marker date="1481389317021" expanded="true" signature="769:791" ph="SELECT * FRO... produits" />
+            <marker date="1481389317021" expanded="true" signature="769:828" ph="SELECT * FRO... produits" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/commande.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vues/updateInfos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -936,20 +961,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
+    <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="45" column="67" lean-forward="false" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+        <state relative-caret-position="51">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/UserManager.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="260" column="8" lean-forward="false" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="50" />
           <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
+            <marker date="1481476026948" expanded="true" signature="865:866" ph="SELECT * FRO... liveur" />
+            <marker date="1481476026948" expanded="true" signature="3005:3030" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481476026948" expanded="true" signature="3790:3815" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481476026948" expanded="true" signature="4179:4180" ph="SELECT * FRO... livreur" />
+            <marker date="1481476026948" expanded="true" signature="4759:4824" ph="SELECT * FRO... livreur" />
+            <marker date="1481476026948" expanded="true" signature="8053:8075" ph="UPDATE utili... " />
+            <marker date="1481476026948" expanded="true" signature="8570:8587" ph="UPDATE clien... " />
+            <marker date="1481476026948" expanded="true" signature="9039:9057" ph="UPDATE emplo... " />
+            <marker date="1481476026948" expanded="true" signature="9316:9331" ph="UPDATE livre... " />
+            <marker date="1481476026948" expanded="true" signature="9316:9334" ph="UPDATE livre... " />
+            <marker date="1481476026948" expanded="true" signature="10003:10028" ph="SELECT * FRO... utilisateur" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+    <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="189" lean-forward="false" selection-start-line="13" selection-start-column="189" selection-end-line="13" selection-end-column="189" />
+        <state relative-caret-position="-103">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <marker date="1481479256084" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
+            <marker date="1481479256084" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
+            <marker date="1481479256084" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/livraisons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1481476608761" expanded="true" signature="145:189" ph="..." />
+            <marker date="1481476608761" expanded="true" signature="1060:1299" ph="..." />
+            <marker date="1481476608761" expanded="true" signature="1060:1317" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/updateCommandStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="87" column="50" lean-forward="false" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
           <folding />
         </state>
       </provider>

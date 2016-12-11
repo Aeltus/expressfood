@@ -5,8 +5,10 @@
         <?php
 
         echo $_SESSION['utilisateur']->getNom()." ".$_SESSION['utilisateur']->getPrenom()."<br />";
-        echo $_SESSION['utilisateur']->getNumero()." ".$_SESSION['utilisateur']->getRue()."<br />";
-        echo $_SESSION['utilisateur']->getCodePostal()." ".$_SESSION['utilisateur']->getVille()."<br />";
+        if (method_exists($_SESSION['utilisateur'], 'getNumero')){
+            echo $_SESSION['utilisateur']->getNumero()." ".$_SESSION['utilisateur']->getRue()."<br />";
+            echo $_SESSION['utilisateur']->getCodePostal()." ".$_SESSION['utilisateur']->getVille()."<br />";
+        }
         echo $_SESSION['utilisateur']->getMail()."<br />";
 
         ?>

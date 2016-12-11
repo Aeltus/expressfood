@@ -46,7 +46,10 @@ if (isset($_POST['nom'])){
     $_SESSION['message-ok'] = "Votre compte à bien été mis à jour";
 }
 if (isset($_POST['dispo'])){
-    $_SESSION['utilisateur']->setDispo($_POST['dispo']);
+    if ($_POST['dispo'] == "on"){
+        $dispo = 1;
+    }
+    $_SESSION['utilisateur']->setDispo($dispo);
 }
 if (isset($_POST['rue'])){
     $_SESSION['utilisateur']->setNumero($_POST['numero']);

@@ -87,6 +87,28 @@ class UserManager extends DAO {
     /*===========================================================================================================================*/
 	}
 
+    /**
+     * @param $idClient
+     * @return Client
+     */
+    public function getClientById ($idClient){
+        $query = "SELECT * FROM utilisateur";
+        $query .= " ";
+        $query .= "LEFT JOIN client ON utilisateur.client_id_client = client.id_client";
+        $query .= " ";
+        $query .= "WHERE id_client ='" . $idClient . "'";
+        $query .= " ";
+        $query .= "LIMIT 1";
+
+
+        $livreur = $this->pdoMysqlQuery($query);
+        $donnees = $livreur->fetch();
+
+        return new Client($donnees['id_utilisateur'],$donnees['nom'], $donnees['prenom'], $donnees['mail'], $donnees['mot_de_passe'], NULL, $donnees['client_id_client'], 1, $donnees['numero'], $donnees['rue'], $donnees['code_postal'], $donnees['ville']);
+
+    }
+
+
 
 	/**
 	 * @access public
@@ -267,13 +289,15 @@ class UserManager extends DAO {
 
             $this->pdoMysqlQuery($query);
 
-            if ($utilisateur->getDroits() == 3){
+            if ($utilisateur->getDroits() == "3"){
+
                 $query = "UPDATE livreur SET ";
                 $query .= " location_lat='".$utilisateur->getLocationLat();
                 $query .= "', location_long='".$utilisateur->getLocationLong();
                 $query .= "', ville_ratach='".$utilisateur->getVilleRatach();
                 $query .= "', dispo=".$utilisateur->getDispo();
                 $query .= " WHERE id_livreur=".$utilisateur->getLivreurId();
+
 
                 $this->pdoMysqlQuery($query);
 
@@ -297,6 +321,8 @@ class UserManager extends DAO {
         $query .= "LEFT JOIN client ON utilisateur.client_id_client = client.id_client";
         $query .= " ";
         $query .= "LEFT JOIN employe ON utilisateur.employe_id_employe = employe.id_employe";
+        $query .= " ";
+        $query .= "LEFT JOIN livreur ON employe.livreur_id_livreur = livreur.id_livreur";
         $query .= " ";
         $query .= "WHERE mail ='" . $login . "'";
         $query .= " ";

@@ -6,6 +6,10 @@
 
 class CommandManager extends DAO {
 
+    /**
+     * @param $idClient
+     * @return Client array
+     */
     public function getCommandsByIdClient($idClient)
     {
         $query = "SELECT * FROM commande WHERE utilisateur_id_utilisateur=".$idClient." ORDER BY date_commande DESC";
@@ -20,16 +24,49 @@ class CommandManager extends DAO {
     }
 
 
+    /**
+     * @param $idLivreur
+     * @return object array
+     */
+    public function getCommandByLivreur($idLivreur){
+        $query = "SELECT * FROM commande WHERE livreur_id_livreur=".$idLivreur." AND ISNULL(date_livraison)=1";
+
+
+        $resultat = $this->pdoMysqlQuery($query);
+        $commande = [];
+
+        while ($donnees = $resultat->fetch()){
+
+            $commande[] = $this->commandObjectCreator($donnees);
+
+        }
+
+        return $commande;
+    }
+
+
 	/**
 	 * @access public
 	 * @param string $refCommande 
-	 * @return object
+	 * @return object array
      *
      * Récupère une commande dans la BDD
 	 */
 
 	public  function getCommandByRef($refCommande) {
+        $query = "SELECT * FROM commande WHERE ref_commande=".$refCommande;
 
+
+        $resultat = $this->pdoMysqlQuery($query);
+        $commande = [];
+
+        while ($donnees = $resultat->fetch()){
+
+            $commande[] = $this->commandObjectCreator($donnees);
+
+        }
+
+        return $commande;
 	}
 
 
@@ -74,13 +111,30 @@ class CommandManager extends DAO {
 	/**
 	 * 	
 	 * @access public
-	 * @param object $command 
+	 * @param object array $command
 	 * @return void
      *
      * Met à jour une commande
 	 */
 
-	public  function updateCommand($command) {
+	public  function updateCommand($commands) {
+
+        $this->pdoMysqlQuery('START TRANSACTION');
+
+        foreach ($commands as $command){
+
+            $query = "UPDATE commande SET";
+            $query .= " quantite=".$command->getQuantite().", livreur_id_livreur=".$command->getIdLivreur().", date_commande='".$command->getDateCommande();
+            $query .= "', date_livraison='".$command->getDateLivraison()."' ";
+            $query .= "WHERE ref_commande=".$command->getRefCommande()." AND produits_id_produit=".$command->getIdProduit();
+
+            $this->pdoMysqlQuery($query);
+
+        }
+
+        $this->pdoMysqlQuery('COMMIT');
+        $_SESSION['message-ok'] = "Mise à jour de la commande effectué";
+
 
 	}
 
