@@ -76,6 +76,7 @@
                             if($_SESSION['role'] == "anonyme"){
                                 echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("accueil").'">ACCUEIL</a></li>';
                                 echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("menu").'">NOS MENUS</a></li>';
+                                echo '<li class="menu-btn"><a href="'.ServiceProvider::setRoute("newCompte").'">Créer un compte</a></li>';
                                 echo'<li class="menu-btn"><a href="#" class="identification">S\'IDENTIFIER</a></li>';
                                 echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('affichePanier') . '">Panier / Commander (';
 

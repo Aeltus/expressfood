@@ -224,13 +224,51 @@ class UserManager extends DAO {
 
 	/**
 	 * @access public
-	 * @param int $idUtilisateur 
+	 * @param Utilisateur
 	 * @return void
      *
      * Ajoute un utilisateur en BDD
 	 */
 
-	public  function addUser($idUtilisateur) {
+	public  function addUser($utilisateur) {
+
+	    // si il s'agit d'un client
+	    if (method_exists($utilisateur, 'getNumero')){
+
+            $query = "INSERT INTO client VALUES (NULL, ".$utilisateur->getNumero().", '".$utilisateur->getRue()."', ".$utilisateur->getCodePostal().", '".$utilisateur->getVille()."')";
+            $this->pdoMysqlQuery($query);
+            $query = "SELECT MAX(id_client) as id_client FROM client";
+            $resultat = $this->pdoMysqlQuery($query);
+            $donnees = $resultat->fetch();
+            $query = "INSERT INTO utilisateur VALUES (NULL, '".$utilisateur->getNom()."', '".$utilisateur->getPrenom()."', '".$utilisateur->getMail()."', '".$utilisateur->getMotDePasse()."', NULL, ".$donnees['id_client'].", 1)";
+            $this->pdoMysqlQuery($query);
+
+        // si il s'agit d'un employe
+        } else {
+
+	        $idLivreur = NULL;
+
+	        // Si il s'agit d'un livreur on commence par créer le livreur en BDD et enregistrer son identifiant
+	        if(method_exists($utilisateur, 'dispo')){
+	            $query = "INSERT INTO livreur VALUES (NULL, '".$utilisateur->getLocationLat()."', '".$utilisateur->getLocationLong()."', '".$utilisateur->getVilleRatach()."', 1)";
+	            $this->pdoMysqlQuery($query);
+                $query = "SELECT MAX(id_livreur) as id_livreur FROM livreur";
+                $resultat = $this->pdoMysqlQuery($query);
+                $donnees = $resultat->fetch();
+                $idLivreur = $donnees['id_livreur'];
+            }
+
+            //On enregistre l'employe
+            $query = "INSERT INTO employe VALUES (".$utilisateur->getDroits().", ".$idLivreur.")";
+            $this->pdoMysqlQuery($query);
+            $query = "SELECT MAX(id_employe) as id_employe FROM employe";
+            $resultat = $this->pdoMysqlQuery($query);
+            $donnees = $resultat->fetch();
+            $query = "INSERT INTO utilisateur VALUES (NULL, '".$utilisateur->getNom()."', '".$utilisateur->getPrenom()."', '".$utilisateur->getMail()."', '".$utilisateur->getMotDePasse()."', ".$donnees['id_employe'].", NULL, 1)";
+            $this->pdoMysqlQuery($query);
+
+        }
+
 
 	}
 
@@ -243,7 +281,7 @@ class UserManager extends DAO {
      * Efface un utilisateur de la BDD (rend invisible)
 	 */
 
-	public final  function deleteUser($idUtilisateur) {
+	public  function deleteUser($idUtilisateur) {
 
 	}
 
