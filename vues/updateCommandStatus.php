@@ -37,7 +37,7 @@ $req->updateCommand($commandes);
 ======================================================================================================================*/
 
 $req = new UserManager();
-$livreur = $req->getLivreurById($_SESSION['utilisateur']->getLivreurId());
+$livreur = $req->getUtilisateurById($_SESSION['utilisateur']->getIdUtilisateur());
 $livreur->setDispo("1");
 $req->updateUser($livreur);
 

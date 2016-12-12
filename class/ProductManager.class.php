@@ -11,23 +11,25 @@ class ProductManager extends DAO {
 	/**
 	 * @access public
 	 * @param int $idProduit 
-	 * @return object
+	 * @return object Produit
      *
      * Récupère un produit dans la BDD
 	 */
 
 	public  function getProduct($idProduit) {
+
         $produitPDO = $this->pdoMysqlQuery("SELECT * FROM produits WHERE id_produit=".$idProduit);
         $produit = $produitPDO->fetch();
-        return new Produit($produit['id_produit'], $produit['nom'],$produit['description'], $produit['photo'], $produit['visible'], $produit['prix'], $produit['type']);
+        return $this->productCreator($produit);
+
 	}
 
 
 	/**
 	 * @access public
-	 * @return object[array]
+	 * @return object[array] Produit
      *
-     * Récupère un liste contenant tous les produits en vente dans la BDD
+     * Récupère une liste contenant tous les produits en vente dans la BDD
 	 */
 
 	public  function getProducts() {
@@ -35,7 +37,7 @@ class ProductManager extends DAO {
        $produits = [];
 
        while ($produit = $produitsPDO->fetch()){
-           $produitObject = new Produit($produit['id_produit'], $produit['nom'],$produit['description'], $produit['photo'], $produit['visible'], $produit['prix'], $produit['type']);
+           $produitObject = $this->productCreator($produit);
            $produits[] = $produitObject;
        }
 
@@ -82,5 +84,15 @@ class ProductManager extends DAO {
 	}
 
 
+    /**
+     * @param $produit => array données PDO
+     * @return Produit
+     */
+    public function productCreator($produit){
+
+        return new Produit($produit['id_produit'], $produit['nom'],$produit['description'], $produit['photo'], $produit['visible'], $produit['prix'], $produit['type']);
+
+    }
+
 }
-?>
+

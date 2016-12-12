@@ -53,12 +53,9 @@ class DAO {
 
 	public  function pdoMysqlQuery($query) {
 
-	    $reponse = $this->bdd->query($query);
-
-        return $reponse;
+        return $this->bdd->query($query);
 
 	}
 
 
 }
-?>

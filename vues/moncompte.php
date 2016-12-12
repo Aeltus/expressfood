@@ -13,7 +13,7 @@
 
         ?>
         <br />
-        <a href="<?php echo ServiceProvider::setRoute('updateInfos') ?>">Modifier mes informations</a>   |   <a href="<?php echo ServiceProvider::setRoute('updatePassword') ?>">Modifier mon mot de passe</a>
+        <a href="<?php echo ServiceProvider::setRoute('updateInfos') ?>">Modifier mes informations</a>   |   <a href="<?php echo ServiceProvider::setRoute('updatePassword') ?>">Modifier mon mot de passe</a>   |   <a href="index.php?content=effacerClient&id=<?php echo $_SESSION['utilisateur']->getIdUtilisateur() ?>">Supprimer mon compte</a>
         <br />
 
     </div>

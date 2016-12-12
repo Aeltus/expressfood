@@ -16,7 +16,7 @@ if ($commande = $req->getCommandByLivreur($_SESSION['utilisateur']->getLivreurId
     echo "<h4>Adresse :</h4><br />";
 
     $obj = new UserManager();
-    $client = $obj->getClientById($commande[0]->getIdUtilisateur());
+    $client = $obj->getUtilisateurById($commande[0]->getIdUtilisateur());
 
     echo $client->getNom()." ".$client->getPrenom()."<br />";
     echo $client->getNumero()." ".$client->getRue()."<br />";

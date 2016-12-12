@@ -228,7 +228,7 @@ class Utilisateur {
 	}
 
     public function setVisible($visible = 1) {
-        $this->idClient = $visible;
+        $this->visible = $visible;
     }
 
 

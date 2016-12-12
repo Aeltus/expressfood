@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9900f11c-cf82-455f-bf85-04fa4b6228a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/newCompte.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/userCreator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/effacerClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/gestionClients.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/class/Diagramme_de_classes.code" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/CommandManager.class.php" afterPath="$PROJECT_DIR$/class/CommandManager.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/DAO.class.php" afterPath="$PROJECT_DIR$/class/DAO.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/ProductManager.class.php" afterPath="$PROJECT_DIR$/class/ProductManager.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/UserManager.class.php" afterPath="$PROJECT_DIR$/class/UserManager.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/header.php" afterPath="$PROJECT_DIR$/vues/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/Utilisateur.class.php" afterPath="$PROJECT_DIR$/class/Utilisateur.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/livraisons.php" afterPath="$PROJECT_DIR$/vues/livraisons.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/moncompte.php" afterPath="$PROJECT_DIR$/vues/moncompte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/paymentConfirm.php" afterPath="$PROJECT_DIR$/vues/paymentConfirm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/updateCommandStatus.php" afterPath="$PROJECT_DIR$/vues/updateCommandStatus.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -129,112 +137,33 @@
       <file leaf-file-name="CommandManager.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+            <state relative-caret-position="2805">
+              <caret line="168" column="47" lean-forward="false" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
               <folding>
-                <marker date="1481479256084" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
-                <marker date="1481479256084" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
-                <marker date="1481479256084" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="livraisons.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/livraisons.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1481476608761" expanded="true" signature="145:189" ph="..." />
-                <marker date="1481476608761" expanded="true" signature="1060:1299" ph="..." />
-                <marker date="1481476608761" expanded="true" signature="1060:1317" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateCommandStatus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/updateCommandStatus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updatePassword.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/updatePassword.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateInfos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/updateInfos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="95" lean-forward="false" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="78" column="106" lean-forward="false" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newCompte.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/newCompte.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="119" lean-forward="false" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userCreator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/userCreator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
+                <marker date="1481577453144" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
+                <marker date="1481577453144" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
+                <marker date="1481577453144" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
               </folding>
             </state>
           </provider>
@@ -243,51 +172,96 @@
       <file leaf-file-name="UserManager.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/class/UserManager.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <marker date="1481487619478" expanded="true" signature="865:866" ph="SELECT * FRO... liveur" />
-                <marker date="1481487619478" expanded="true" signature="3005:3030" ph="SELECT * FRO... utilisateur" />
-                <marker date="1481487619478" expanded="true" signature="3790:3815" ph="SELECT * FRO... utilisateur" />
-                <marker date="1481487619478" expanded="true" signature="4179:4180" ph="SELECT * FRO... livreur" />
-                <marker date="1481487619478" expanded="true" signature="4759:4824" ph="SELECT * FRO... livreur" />
-                <marker date="1481487619478" expanded="true" signature="7710:7735" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7710:7737" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7710:7774" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7710:7804" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7710:7839" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7710:7870" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7710:7871" ph="INSERT INTO client... " />
-                <marker date="1481487619478" expanded="true" signature="7937:7983" ph="SELECT * FRO... client" />
-                <marker date="1481487619478" expanded="true" signature="8105:8137" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8144" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8174" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8207" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8238" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8279" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8280" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8282" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8309" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8105:8310" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="8622:8650" ph="INSERT INTO livreur... " />
-                <marker date="1481487619478" expanded="true" signature="8622:8695" ph="INSERT INTO livreur... " />
-                <marker date="1481487619478" expanded="true" signature="8622:8734" ph="INSERT INTO livreur... " />
-                <marker date="1481487619478" expanded="true" signature="8622:8773" ph="INSERT INTO livreur... " />
-                <marker date="1481487619478" expanded="true" signature="8845:8894" ph="SELECT * FRO... livreur" />
-                <marker date="1481487619478" expanded="true" signature="9130:9158" ph="INSERT INTO employe... " />
-                <marker date="1481487619478" expanded="true" signature="9130:9189" ph="INSERT INTO employe... " />
-                <marker date="1481487619478" expanded="true" signature="9130:9204" ph="INSERT INTO employe... " />
-                <marker date="1481487619478" expanded="true" signature="9271:9320" ph="SELECT * FRO... livreur" />
-                <marker date="1481487619478" expanded="true" signature="9442:9610" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="9442:9611" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="9442:9647" ph="INSERT INTO utilisateur... " />
-                <marker date="1481487619478" expanded="true" signature="10140:10162" ph="UPDATE utili... " />
-                <marker date="1481487619478" expanded="true" signature="10657:10674" ph="UPDATE clien... " />
-                <marker date="1481487619478" expanded="true" signature="11126:11144" ph="UPDATE emplo... " />
-                <marker date="1481487619478" expanded="true" signature="11403:11418" ph="UPDATE livre... " />
-                <marker date="1481487619478" expanded="true" signature="11403:11421" ph="UPDATE livre... " />
-                <marker date="1481487619478" expanded="true" signature="12090:12115" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481579812172" expanded="true" signature="995:996" ph="SELECT * FRO... liveur" />
+                <marker date="1481579812172" expanded="true" signature="2938:2963" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481579812172" expanded="true" signature="3749:3774" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481579812172" expanded="true" signature="3749:4091" ph="SELECT * FRO... livreur" />
+                <marker date="1481579812172" expanded="true" signature="4700:4725" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481579812172" expanded="true" signature="5075:5100" ph="SELECT * FRO... utilisateur" />
+                <marker date="1481579812172" expanded="true" signature="7314:7339" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7314:7341" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7314:7378" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7314:7408" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7314:7443" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7314:7474" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7314:7475" ph="INSERT INTO client... " />
+                <marker date="1481579812172" expanded="true" signature="7541:7587" ph="SELECT * FRO... client" />
+                <marker date="1481579812172" expanded="true" signature="7709:7741" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7748" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7778" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7811" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7842" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7883" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7884" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7886" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7913" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="7709:7914" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="8226:8254" ph="INSERT INTO livreur... " />
+                <marker date="1481579812172" expanded="true" signature="8226:8299" ph="INSERT INTO livreur... " />
+                <marker date="1481579812172" expanded="true" signature="8226:8338" ph="INSERT INTO livreur... " />
+                <marker date="1481579812172" expanded="true" signature="8226:8377" ph="INSERT INTO livreur... " />
+                <marker date="1481579812172" expanded="true" signature="8449:8498" ph="SELECT * FRO... livreur" />
+                <marker date="1481579812172" expanded="true" signature="8734:8762" ph="INSERT INTO employe... " />
+                <marker date="1481579812172" expanded="true" signature="8734:8793" ph="INSERT INTO employe... " />
+                <marker date="1481579812172" expanded="true" signature="8734:8808" ph="INSERT INTO employe... " />
+                <marker date="1481579812172" expanded="true" signature="8875:8924" ph="SELECT * FRO... livreur" />
+                <marker date="1481579812172" expanded="true" signature="9046:9214" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="9046:9215" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="9046:9251" ph="INSERT INTO utilisateur... " />
+                <marker date="1481579812172" expanded="true" signature="9550:9572" ph="UPDATE utili... " />
+                <marker date="1481579812172" expanded="true" signature="10067:10084" ph="UPDATE clien... " />
+                <marker date="1481579812172" expanded="true" signature="10536:10554" ph="UPDATE emplo... " />
+                <marker date="1481579812172" expanded="true" signature="10813:10828" ph="UPDATE livre... " />
+                <marker date="1481579812172" expanded="true" signature="10813:10831" ph="UPDATE livre... " />
+                <marker date="1481579812172" expanded="true" signature="11500:11525" ph="SELECT * FRO... utilisateur" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductManager.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+              <folding>
+                <marker date="1481577704553" expanded="true" signature="293:333" ph="SELECT * FRO... produits" />
+                <marker date="1481577704553" expanded="true" signature="667:689" ph="SELECT * FRO... produits" />
+                <marker date="1481577704553" expanded="true" signature="667:726" ph="SELECT * FRO... produits" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userUpdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAO.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/DAO.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateCommandStatus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/updateCommandStatus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -295,8 +269,8 @@
       <file leaf-file-name="paymentConfirm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="38" />
+            <state relative-caret-position="102">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -342,7 +316,6 @@
         <option value="$PROJECT_DIR$/class/Router.class.php" />
         <option value="$PROJECT_DIR$/vues/deconnecte.php" />
         <option value="$PROJECT_DIR$/vues/router.php" />
-        <option value="$PROJECT_DIR$/class/DAO.class.php" />
         <option value="$PROJECT_DIR$/conf/config.json" />
         <option value="$PROJECT_DIR$/sos.php" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -350,13 +323,9 @@
         <option value="$PROJECT_DIR$/class/Employe.class.php" />
         <option value="$PROJECT_DIR$/class/Client.class.php" />
         <option value="$PROJECT_DIR$/class/Livreur.class.php" />
-        <option value="$PROJECT_DIR$/class/Utilisateur.class.php" />
         <option value="$PROJECT_DIR$/vues/affichePanier.php" />
-        <option value="$PROJECT_DIR$/vues/paymentConfirm.php" />
-        <option value="$PROJECT_DIR$/class/ProductManager.class.php" />
         <option value="$PROJECT_DIR$/vues/menu.php" />
         <option value="$PROJECT_DIR$/class/Produit.class.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8b1c196c-669c-4f30-9a98-193fc15ab215/console.sql" />
         <option value="$PROJECT_DIR$/vues/passwordReset.php" />
         <option value="$PROJECT_DIR$/vues/updatePassword.html" />
@@ -366,14 +335,21 @@
         <option value="$PROJECT_DIR$/vues/footer.php" />
         <option value="$PROJECT_DIR$/class/ServiceProvider.class.php" />
         <option value="$PROJECT_DIR$/vues/adminAccueil.html" />
-        <option value="$PROJECT_DIR$/vues/moncompte.php" />
         <option value="$PROJECT_DIR$/vues/userUpdate.php" />
-        <option value="$PROJECT_DIR$/vues/livraisons.php" />
-        <option value="$PROJECT_DIR$/class/CommandManager.class.php" />
-        <option value="$PROJECT_DIR$/vues/updateCommandStatus.php" />
         <option value="$PROJECT_DIR$/vues/header.php" />
         <option value="$PROJECT_DIR$/vues/newCompte.html" />
         <option value="$PROJECT_DIR$/vues/userCreator.php" />
+        <option value="$PROJECT_DIR$/vues/livraisons.php" />
+        <option value="$PROJECT_DIR$/class/Utilisateur.class.php" />
+        <option value="$PROJECT_DIR$/vues/effacerClient.php" />
+        <option value="$PROJECT_DIR$/vues/gestionClients.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/vues/moncompte.php" />
+        <option value="$PROJECT_DIR$/vues/paymentConfirm.php" />
+        <option value="$PROJECT_DIR$/vues/updateCommandStatus.php" />
+        <option value="$PROJECT_DIR$/class/CommandManager.class.php" />
+        <option value="$PROJECT_DIR$/class/ProductManager.class.php" />
+        <option value="$PROJECT_DIR$/class/DAO.class.php" />
         <option value="$PROJECT_DIR$/class/UserManager.class.php" />
       </list>
     </option>
@@ -502,8 +478,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,11 +579,13 @@
       <workItem from="1481368012044" duration="17165000" />
       <workItem from="1481398527157" duration="7957000" />
       <workItem from="1481453902847" duration="20386000" />
+      <workItem from="1481563450600" duration="10945000" />
+      <workItem from="1481579266168" duration="545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121145000" />
+    <option name="totallyTimeSpent" value="132635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,25 +600,25 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14605543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14069264" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17207792" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18506494" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17207792" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14069264" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
@@ -648,13 +626,13 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17099567" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17207792" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18506494" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1444563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -672,36 +650,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/routes.php" />
-    <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/assets/js/mesScripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/footer.html" />
-    <entry file="file://$PROJECT_DIR$/vues/mentions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/identifie.php" />
     <entry file="file://$PROJECT_DIR$/vues/mentions.php" />
     <entry file="file://$PROJECT_DIR$/vues/router.php" />
@@ -714,14 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/config.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/53c1e3c9-ceb4-48fe-a8ab-b1331d6cfdfa/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -730,14 +676,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.produits">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -749,14 +695,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.employe">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -775,14 +721,6 @@
             <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/DAO.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="175" lean-forward="false" selection-start-line="35" selection-start-column="175" selection-end-line="35" selection-end-column="175" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,38 +773,22 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.utilisateur">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/passwordReset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vues/passwordReset.php" />
     <entry file="file://$PROJECT_DIR$/vues/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Utilisateur.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="120" column="5" lean-forward="false" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,15 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,48 +810,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/ServiceProvider.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.livreur">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <marker date="1481389317021" expanded="true" signature="284:324" ph="SELECT * FRO... produits" />
-            <marker date="1481389317021" expanded="true" signature="769:791" ph="SELECT * FRO... produits" />
-            <marker date="1481389317021" expanded="true" signature="769:828" ph="SELECT * FRO... produits" />
-          </folding>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -951,24 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/updateInfos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -977,83 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/livraisons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1481476608761" expanded="true" signature="145:189" ph="..." />
-            <marker date="1481476608761" expanded="true" signature="1060:1299" ph="..." />
-            <marker date="1481476608761" expanded="true" signature="1060:1317" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/updateCommandStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="78" column="106" lean-forward="false" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/updatePassword.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding>
-            <marker date="1481479256084" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
-            <marker date="1481479256084" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
-            <marker date="1481479256084" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,66 +852,316 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="119" lean-forward="false" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vues/userCreator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="357">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/livraisons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1481566190367" expanded="true" signature="145:189" ph="..." />
+            <marker date="1481566190367" expanded="true" signature="1065:1304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Utilisateur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="223" column="7" lean-forward="true" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="78" column="106" lean-forward="false" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ServiceProvider.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="39" lean-forward="false" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/effacerClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vues/gestionClients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="312" lean-forward="false" selection-start-line="15" selection-start-column="312" selection-end-line="15" selection-end-column="312" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/updateCommandStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="168" column="47" lean-forward="false" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
+          <folding>
+            <marker date="1481577453144" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
+            <marker date="1481577453144" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
+            <marker date="1481577453144" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <marker date="1481577704553" expanded="true" signature="293:333" ph="SELECT * FRO... produits" />
+            <marker date="1481577704553" expanded="true" signature="667:689" ph="SELECT * FRO... produits" />
+            <marker date="1481577704553" expanded="true" signature="667:726" ph="SELECT * FRO... produits" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\DAO">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\DAO</OriginalElement>
+          <nodes>
+            <node x="-103.0" y="-285.0">\DAO</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-338.0" y="-179.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\CommandManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\CommandManager</OriginalElement>
+          <nodes>
+            <node x="0.0" y="80.0">\CommandManager</node>
+            <node x="39.5" y="0.0">\DAO</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\CommandManager" target="\DAO">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-298.5" y="-139.0" />
+          <SelectedNodes>
+            <node>\CommandManager</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\UserManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\UserManager</OriginalElement>
+          <nodes>
+            <node x="0.0" y="148.0">\UserManager</node>
+            <node x="95.0" y="0.0">\DAO</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="\UserManager" target="\DAO">
+              <point x="0.0" y="-114.0" />
+              <point x="0.0" y="49.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-315.5" y="-139.0" />
+          <SelectedNodes>
+            <node>\UserManager</node>
+            <node>\DAO</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constants</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/DAO.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\Utilisateur">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\Utilisateur</OriginalElement>
+          <nodes>
+            <node x="" y="">\Utilisateur</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-644.0" y="-345.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constants</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/class/UserManager.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <marker date="1481487619478" expanded="true" signature="865:866" ph="SELECT * FRO... liveur" />
-            <marker date="1481487619478" expanded="true" signature="3005:3030" ph="SELECT * FRO... utilisateur" />
-            <marker date="1481487619478" expanded="true" signature="3790:3815" ph="SELECT * FRO... utilisateur" />
-            <marker date="1481487619478" expanded="true" signature="4179:4180" ph="SELECT * FRO... livreur" />
-            <marker date="1481487619478" expanded="true" signature="4759:4824" ph="SELECT * FRO... livreur" />
-            <marker date="1481487619478" expanded="true" signature="7710:7735" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7710:7737" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7710:7774" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7710:7804" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7710:7839" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7710:7870" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7710:7871" ph="INSERT INTO client... " />
-            <marker date="1481487619478" expanded="true" signature="7937:7983" ph="SELECT * FRO... client" />
-            <marker date="1481487619478" expanded="true" signature="8105:8137" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8144" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8174" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8207" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8238" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8279" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8280" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8282" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8309" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8105:8310" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="8622:8650" ph="INSERT INTO livreur... " />
-            <marker date="1481487619478" expanded="true" signature="8622:8695" ph="INSERT INTO livreur... " />
-            <marker date="1481487619478" expanded="true" signature="8622:8734" ph="INSERT INTO livreur... " />
-            <marker date="1481487619478" expanded="true" signature="8622:8773" ph="INSERT INTO livreur... " />
-            <marker date="1481487619478" expanded="true" signature="8845:8894" ph="SELECT * FRO... livreur" />
-            <marker date="1481487619478" expanded="true" signature="9130:9158" ph="INSERT INTO employe... " />
-            <marker date="1481487619478" expanded="true" signature="9130:9189" ph="INSERT INTO employe... " />
-            <marker date="1481487619478" expanded="true" signature="9130:9204" ph="INSERT INTO employe... " />
-            <marker date="1481487619478" expanded="true" signature="9271:9320" ph="SELECT * FRO... livreur" />
-            <marker date="1481487619478" expanded="true" signature="9442:9610" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="9442:9611" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="9442:9647" ph="INSERT INTO utilisateur... " />
-            <marker date="1481487619478" expanded="true" signature="10140:10162" ph="UPDATE utili... " />
-            <marker date="1481487619478" expanded="true" signature="10657:10674" ph="UPDATE clien... " />
-            <marker date="1481487619478" expanded="true" signature="11126:11144" ph="UPDATE emplo... " />
-            <marker date="1481487619478" expanded="true" signature="11403:11418" ph="UPDATE livre... " />
-            <marker date="1481487619478" expanded="true" signature="11403:11421" ph="UPDATE livre... " />
-            <marker date="1481487619478" expanded="true" signature="12090:12115" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481579812172" expanded="true" signature="995:996" ph="SELECT * FRO... liveur" />
+            <marker date="1481579812172" expanded="true" signature="2938:2963" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481579812172" expanded="true" signature="3749:3774" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481579812172" expanded="true" signature="3749:4091" ph="SELECT * FRO... livreur" />
+            <marker date="1481579812172" expanded="true" signature="4700:4725" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481579812172" expanded="true" signature="5075:5100" ph="SELECT * FRO... utilisateur" />
+            <marker date="1481579812172" expanded="true" signature="7314:7339" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7314:7341" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7314:7378" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7314:7408" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7314:7443" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7314:7474" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7314:7475" ph="INSERT INTO client... " />
+            <marker date="1481579812172" expanded="true" signature="7541:7587" ph="SELECT * FRO... client" />
+            <marker date="1481579812172" expanded="true" signature="7709:7741" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7748" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7778" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7811" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7842" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7883" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7884" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7886" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7913" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="7709:7914" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="8226:8254" ph="INSERT INTO livreur... " />
+            <marker date="1481579812172" expanded="true" signature="8226:8299" ph="INSERT INTO livreur... " />
+            <marker date="1481579812172" expanded="true" signature="8226:8338" ph="INSERT INTO livreur... " />
+            <marker date="1481579812172" expanded="true" signature="8226:8377" ph="INSERT INTO livreur... " />
+            <marker date="1481579812172" expanded="true" signature="8449:8498" ph="SELECT * FRO... livreur" />
+            <marker date="1481579812172" expanded="true" signature="8734:8762" ph="INSERT INTO employe... " />
+            <marker date="1481579812172" expanded="true" signature="8734:8793" ph="INSERT INTO employe... " />
+            <marker date="1481579812172" expanded="true" signature="8734:8808" ph="INSERT INTO employe... " />
+            <marker date="1481579812172" expanded="true" signature="8875:8924" ph="SELECT * FRO... livreur" />
+            <marker date="1481579812172" expanded="true" signature="9046:9214" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="9046:9215" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="9046:9251" ph="INSERT INTO utilisateur... " />
+            <marker date="1481579812172" expanded="true" signature="9550:9572" ph="UPDATE utili... " />
+            <marker date="1481579812172" expanded="true" signature="10067:10084" ph="UPDATE clien... " />
+            <marker date="1481579812172" expanded="true" signature="10536:10554" ph="UPDATE emplo... " />
+            <marker date="1481579812172" expanded="true" signature="10813:10828" ph="UPDATE livre... " />
+            <marker date="1481579812172" expanded="true" signature="10813:10831" ph="UPDATE livre... " />
+            <marker date="1481579812172" expanded="true" signature="11500:11525" ph="SELECT * FRO... utilisateur" />
           </folding>
         </state>
       </provider>

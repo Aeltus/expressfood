@@ -13,14 +13,6 @@ $infosLivraison = $req->trouveLivreur($_SESSION['utilisateur']);
 
 /*====================================================================================================================*/
 
-/* Instancie un objet livreur depuis l'ID du livreur sélectionné
-======================================================================================================================*/
-
-$livreurObject = new UserManager();
-$livreur = $livreurObject->getLivreurById($infosLivraison['livreur']);
-
-
-/*====================================================================================================================*/
 
 /* Envoie un mail au livreur sélectionné
 ======================================================================================================================*/
@@ -50,7 +42,7 @@ $message .= "<div width='600px'><table><tr> <th>Dénomination</th><th>Quantité<
                 $message .="<tr><td>".$produit->getNom()."</td><td>".$qtiteProduit."</td></tr>";
 
                 // Enregistrement de la commande sous forme de tableau d'objets pour enregistrement utltérieur en BDD
-                $curentCommand = new commande($_SESSION['utilisateur']->getIdUtilisateur(), $idProduit, $qtiteProduit, $refCommande, $livreur->getLivreurId(), $now);
+                $curentCommand = new commande($_SESSION['utilisateur']->getIdUtilisateur(), $idProduit, $qtiteProduit, $refCommande, $infosLivraison['livreur']->getLivreurId(), $now);
                 $commandArray[] = $curentCommand;
             }
 
@@ -58,13 +50,13 @@ $message .= "</table></div><br />";
 $message .= "<p>Merci,</p>";
 $message .= "<p>L' équipe d'Express Food</p>";
 
-//mail($livreur->getMail(), "Nouvelle livraison", $message);
+//mail($infosLivraison['livreur']->getMail(), "Nouvelle livraison", $message);
 
 /*====================================================================================================================*/
 
 /* Enregistre la commande en BDD + message
 ======================================================================================================================*/
-$_SESSION['message-ok'] = "Votre livreur : ".$livreur->getNom()." ".$livreur->getPrenom()." se trouve actuellement à ".$infosLivraison['distance']." et sera chez vous d'ici ".$infosLivraison['duree'];
+$_SESSION['message-ok'] = "Votre livreur : ".$infosLivraison['livreur']->getNom()." ".$infosLivraison['livreur']->getPrenom()." se trouve actuellement à ".$infosLivraison['distance']." et sera chez vous d'ici ".$infosLivraison['duree'];
 
 
 $req = new CommandManager();
@@ -76,9 +68,9 @@ $req->addCommand($commandArray);
 /* Met à jour le livreur sélectionné en BDD pour le définir comme non disponible
 ======================================================================================================================*/
 
-$livreur->setDispo('0');
+$infosLivraison['livreur']->setDispo('0');
 $req = new UserManager();
-$req->updateUser($livreur);
+$req->updateUser($infosLivraison['livreur']);
 
 /*====================================================================================================================*/
 

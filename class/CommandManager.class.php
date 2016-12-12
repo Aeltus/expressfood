@@ -164,8 +164,16 @@ class CommandManager extends DAO {
         return $statut;
     }
 
+    /**
+     *
+     * @param $commande => array de données PDO
+     * @return commande
+     *
+     */
     public function commandObjectCreator($commande){
+
        return new commande($commande['utilisateur_id_utilisateur'], $commande['produits_id_produit'], $commande['quantite'], $commande['ref_commande'], $commande['livreur_id_livreur'], $commande['date_commande'],$commande['date_livraison']);
+
     }
 
 
