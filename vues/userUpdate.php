@@ -8,6 +8,24 @@
  *
  */
 
+/* Création de l'entité à modifier
+======================================================================================================================*/
+
+if (isset($_GET['id'])){
+
+    $req = new UserManager();
+    $utilisateur = $req->getUtilisateurById($_GET['id']);
+
+} else {
+
+    $utilisateur = $_SESSION['utilisateur'];
+
+}
+
+
+/*====================================================================================================================*/
+
+
 /* Modification de l'entité si modification du mot de passe
 ======================================================================================================================*/
 
@@ -39,36 +57,42 @@ if (isset($_POST['lastPass'])) {
 
 /* Modification de l'entité si modification des données Utilisateurs ou Client
 ======================================================================================================================*/
+
 if (isset($_POST['nom'])){
-    $_SESSION['utilisateur']->setNom($_POST['nom']);
-    $_SESSION['utilisateur']->setPrenom($_POST['prenom']);
-    $_SESSION['utilisateur']->setMail($_POST['mail']);
-    $_SESSION['message-ok'] = "Votre compte à bien été mis à jour";
+    $utilisateur->setNom($_POST['nom']);
+    $utilisateur->setPrenom($_POST['prenom']);
+    $utilisateur->setMail($_POST['mail']);
+    $_SESSION['message-ok'] = "Le compte à bien été mis à jour";
 }
 if (isset($_POST['dispo'])){
     if ($_POST['dispo'] == "on"){
         $dispo = 1;
     }
-    $_SESSION['utilisateur']->setDispo($dispo);
+    $utilisateur->setDispo($dispo);
+}
+if (isset($_POST['locationLat'])){
+    $utilisateur->setLocationLat($_POST['locationLat']);
+    $utilisateur->setLocationLong($_POST['locationLong']);
+    $utilisateur->setVilleRatach($_POST['villeRatach']);
+}
+if (isset($_POST['droits'])){
+    $utilisateur->setDroits($_POST['droits']);
 }
 if (isset($_POST['rue'])){
-    $_SESSION['utilisateur']->setNumero($_POST['numero']);
-    $_SESSION['utilisateur']->setRue($_POST['rue']);
-    $_SESSION['utilisateur']->setCodePostal($_POST['codePostal']);
-    $_SESSION['utilisateur']->setVille($_POST['ville']);
+    $utilisateur->setNumero($_POST['numero']);
+    $utilisateur->setRue($_POST['rue']);
+    $utilisateur->setCodePostal($_POST['codePostal']);
+    $utilisateur->setVille($_POST['ville']);
 }
-
-
-
 
 /*====================================================================================================================*/
 
 /* Mise à jour de l'entité en BDD
 ======================================================================================================================*/
 $req = new UserManager();
-$req->updateUser($_SESSION['utilisateur']);
+$req->updateUser($utilisateur);
 
 /*====================================================================================================================*/
 
 
-ServiceProvider::newPage(ServiceProvider::setRoute('moncompte'));
+ServiceProvider::newPage(ServiceProvider::setRoute($_SESSION['routeActuelle']));

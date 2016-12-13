@@ -17,7 +17,7 @@
         // constitution du tableau
         foreach ($users as $user){
             echo "<tr><td>".$user->getIdUtilisateur()."</td><td>".$user->getNom()." ".$user->getPrenom()."</td><td>".$user->getNumero()." ".$user->getRue()."<br />".$user->getCodePostal()." ".$user->getVille()."</td><td>".$user->getMail();
-            echo "</td><td><a href='index.php?content=historiqueClient&id=".$user->getIdUtilisateur()."'>voir</a></td><td><a href='index.php?content=modifierClient&id=".$user->getIdUtilisateur()."'>modifier</a></td><td><a href='index.php?content=effacerClient&id=".$user->getIdUtilisateur()."'>effacer</a></td></tr>";
+            echo "</td><td><a href='index.php?content=historiqueClient&id=".$user->getIdUtilisateur()."'>voir</a></td><td><a href='index.php?content=updateUser&id=".$user->getIdUtilisateur()."'>modifier</a></td><td><a href='index.php?content=effacerClient&id=".$user->getIdUtilisateur()."'>effacer</a></td></tr>";
         }
 
         ?>

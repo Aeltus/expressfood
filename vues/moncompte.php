@@ -30,61 +30,48 @@
     <?php
     $req = new CommandManager();
     $commandes = $req->getCommandsByIdClient($_SESSION['utilisateur']->getIdUtilisateur());
-    $commandEnCours = "";
-    $totalCommande = 0;
-    $dateEnCours = "";
-    $contenu = "";
+    $commandeActuelle = "";
     $i = 0;
-    $totalLignes = count($commandes);
+    $prixtotal = 0;
 
-    foreach ($commandes as $commande) {
+    foreach ($commandes as $commande){
 
-        // Si on change de Ref commande on affiche
-        if ($commandEnCours !== $commande->getRefCommande() && $i > 0) {
-            echo "<br /><h4>Commande N° " . $commandEnCours . " du " . $dateEnCours . " Statut : " . $statut . "</h4>";
+        // 1ere ligne
+        if ($commandeActuelle !== $commande->getRefCommande()) {
 
-            echo "<table><tr><th>Produit</th><th>Quantité</th><th>Prix</th></tr>";
-            echo $contenu;
-            echo "<tr><td colspan='2'>Total</td><td>" . $totalCommande . "</td></tr>";
-            echo "</table>";
-            $contenu = "";
-            $totalCommande = 0;
+            if ($i > 0){
+                echo "<tr><td colspan='3'><strong>TOTAL : </strong></td><td>".$prixtotal."</td></tr></table><br />";
+                $prixtotal = 0;
+            }
+
+
+            if ($commande->getDateLivraison() == NULL) {
+                $statut = "Livraison en cours";
+            } else {
+                $statut = "Livré le : " . $commande->getDateLivraison();
+            }
+
+            $commandeActuelle = $commande->getRefCommande();
+
+            echo "<h4>Commande N° " . $commande->getRefCommande() . " du " . $commande->getDateCommande() . " Statut : " . $statut."</h4>";
+            echo "<table><tr><th>Produit</th><th>Quantité</th><th>Prix unitaire</th><th>Total ligne</th></tr>";
 
         }
 
         $req = new ProductManager();
-        $produit = $req->getProduct($commande->getIDProduit());
+        $produit = $req->getProduct($commande->getIdProduit());
 
-        $req = new CommandManager();
-        $statut = $req->getStatut($commande);
+        $tarifLigne = $produit->getPrix() * $commande->getQuantite();
+        $prixtotal += $tarifLigne;
 
-        $commandEnCours = $commande->getRefCommande();
-        $dateEnCours = $commande->getDateCommande();
-        $totalCommande += $produit->getPrix();
-
-        //Création du contenu du tableau avec la nouvelle commande
-        ob_start();
-
-        echo "<tr><td>" . $produit->getNom() . "</td><td>" . $commande->getQuantite() . "</td><td>" . $produit->getPrix() . "</td></tr>";
-
-        $contenu .= ob_get_contents();
-        ob_end_clean();
+        echo "<tr><td>".$produit->getNom()."</td><td>".$commande->getQuantite()."</td><td>".$produit->getPrix()."</td><td>".$tarifLigne."</td></tr>";
 
 
         $i++;
 
-        //Si dernière ligne on affiche
-        if ($i == $totalLignes) {
-            echo "<br /><h4>Commande N° " . $commandEnCours . " du " . $dateEnCours . " Statut : " . $statut . "</h4>";
-
-            echo "<table><tr><th>Produit</th><th>Quantité</th><th>Prix</th></tr>";
-            echo $contenu;
-            echo "<tr><td colspan='2'>Total</td><td>" . $totalCommande . "</td></tr>";
-            echo "</table>";
-            $contenu = "";
-            $totalCommande = 0;
-        }
     }
+
+    echo "<tr><td colspan='3'><strong>TOTAL : </strong></td><td>".$prixtotal."</td></tr></table><br />";
 
     //Si il n'y a pas d'historique on affiche un texte
     if (!isset($statut)) {
