@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-offset-5 col-md-3">
+        <h3>Ajouter un produit</h3>
+        <br />
+        <form action="index.php?content=addProduct" method="post" enctype="multipart/form-data">
+
+            <label for="denomination">Dénomination : </label><input type="text" name="denomination" id="denomination" placeholder="Dénomination du produit" required><br />
+            <label for="description">Description du produit : </label><textarea name="description" id="description" required></textarea><br />
+            <label for="photo">Photo : </label><input type="file" name="photo" id="photo" required><br />
+            <label for="prix">Prix en € : </label><input type="text" name="prix" id="prix" placeholder="€" required><br />
+            <label for="type">Type : </label>
+            <select name="type" id="type">
+                <option value="1" selected>Dessert</option>
+                <option value="2">Plat</option>
+            </select>
+
+            <input type="submit" value="Enregistrer">
+
+        </form>
+    </div>
+</div>

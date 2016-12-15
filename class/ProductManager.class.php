@@ -32,8 +32,8 @@ class ProductManager extends DAO {
      * Récupère une liste contenant tous les produits en vente dans la BDD
 	 */
 
-	public  function getProducts() {
-       $produitsPDO = $this->pdoMysqlQuery("SELECT * FROM produits WHERE visible='1' ORDER BY type DESC");
+	public  function getProducts($visible = 1) {
+       $produitsPDO = $this->pdoMysqlQuery("SELECT * FROM produits WHERE visible='".$visible."' ORDER BY type DESC");
        $produits = [];
 
        while ($produit = $produitsPDO->fetch()){
@@ -55,33 +55,35 @@ class ProductManager extends DAO {
 
 	public  function addProduct( $Produit) {
 
+	    $query = "INSERT INTO produits SET ";
+	    $query .= "nom='".$Produit->getNom()."', ";
+        $query .= "description='".$Produit->getDescription()."', ";
+        $query .= "photo='".$Produit->getPhoto()."', ";
+        $query .= "visible=".$Produit->getVisible().", ";
+        $query .= "prix=".$Produit->getPrix().", ";
+        $query .= "type=".$Produit->getType();
+
+
+        $this->pdoMysqlQuery($query);
 	}
 
 
 	/**
 	 * @access public
-	 * @param int $idProduit 
+	 * @param int $idProduit, int $visible
 	 * @return void
      *
-     * efface un produit en BDD
+     * met à jour la visibilité d'un produit
 	 */
 
-	public function deleteProduct($idProduit) {
+	public function updateProduct($idProduit, $visible) {
+
+    $query = "UPDATE produits SET visible=".$visible." WHERE id_produit=".$idProduit;
+
+    $this->pdoMysqlQuery($query);
 
 	}
 
-
-	/**
-	 * @access public
-	 * @param object $Produit 
-	 * @return void
-     *
-     * met à jour un produit en BDD
-	 */
-
-	public final  function updateProduct( $Produit) {
-
-	}
 
 
     /**

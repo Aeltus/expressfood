@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9900f11c-cf82-455f-bf85-04fa4b6228a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/historiqueClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/updateUser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/addProduct.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/ajoutProduit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/gestionProduits.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vues/visibiliteProduit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/gestionClients.php" afterPath="$PROJECT_DIR$/vues/gestionClients.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/moncompte.php" afterPath="$PROJECT_DIR$/vues/moncompte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/userUpdate.php" afterPath="$PROJECT_DIR$/vues/userUpdate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/ProductManager.class.php" afterPath="$PROJECT_DIR$/class/ProductManager.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/assets/css/styles.css" afterPath="$PROJECT_DIR$/vues/assets/css/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,55 +128,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CommandManager.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding>
-                <marker date="1481577453144" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="218:311" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="218:315" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="218:316" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="718:766" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="718:809" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="718:810" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="1251:1293" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="1251:1307" ph="SELECT * FRO... commande" />
-                <marker date="1481577453144" expanded="true" signature="1902:1929" ph="INSERT INTO commande... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2674" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2710" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2711" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2735" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2758" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2759" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2802" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2804" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2875" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2877" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2908" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2909" ph="UPDATE comma... " />
-                <marker date="1481577453144" expanded="true" signature="2655:2911" ph="UPDATE comma... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userUpdate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="updateInfos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/updateInfos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="765">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="47" selection-end-column="15" />
               <folding />
             </state>
@@ -185,18 +141,31 @@
       <file leaf-file-name="updateUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/updateUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historiqueClient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/historiqueClient.php">
+      <file leaf-file-name="gestionProduits.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/gestionProduits.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#268#449#0#PHP" expanded="true" />
+                <element signature="e#1272#1463#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visibiliteProduit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/visibiliteProduit.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="61" selection-end-column="100" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -204,51 +173,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commande.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/commande.class.php">
+      <file leaf-file-name="ajoutProduit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/ajoutProduit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="35" />
+            <state relative-caret-position="204">
+              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moncompte.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gestionClients.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/gestionClients.php">
+      <file leaf-file-name="addProduct.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/addProduct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="159" lean-forward="false" selection-start-line="19" selection-start-column="159" selection-end-line="19" selection-end-column="159" />
+            <state relative-caret-position="575">
+              <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductManager.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1481826967995" expanded="true" signature="293:333" ph="SELECT * FRO... produits" />
+                <marker date="1481826967995" expanded="true" signature="679:701" ph="SELECT * FRO... produits" />
+                <marker date="1481826967995" expanded="true" signature="679:749" ph="SELECT * FRO... produits" />
+                <marker date="1481826967995" expanded="true" signature="1141:1165" ph="INSERT INTO produits... " />
+                <marker date="1481826967995" expanded="true" signature="1753:1811" ph="UPDATE visib... " />
+                <marker date="1481826967995" expanded="true" signature="1753:1812" ph="UPDATE visib... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Produit.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/Produit.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DAO.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class/DAO.class.php">
+      <file leaf-file-name="effacerClient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/effacerClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paymentConfirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/paymentConfirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="408">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -279,11 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue/templates/accueil.html" />
-        <option value="$PROJECT_DIR$/vue/layer.php" />
-        <option value="$PROJECT_DIR$/vue/.htaccess" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/class/router.php" />
@@ -321,7 +304,6 @@
         <option value="$PROJECT_DIR$/vues/paymentConfirm.php" />
         <option value="$PROJECT_DIR$/vues/updateCommandStatus.php" />
         <option value="$PROJECT_DIR$/class/CommandManager.class.php" />
-        <option value="$PROJECT_DIR$/class/ProductManager.class.php" />
         <option value="$PROJECT_DIR$/class/DAO.class.php" />
         <option value="$PROJECT_DIR$/class/UserManager.class.php" />
         <option value="$PROJECT_DIR$/vues/updateAnUser.php" />
@@ -330,6 +312,12 @@
         <option value="$PROJECT_DIR$/vues/updateUser.php" />
         <option value="$PROJECT_DIR$/vues/historiqueClient.php" />
         <option value="$PROJECT_DIR$/vues/moncompte.php" />
+        <option value="$PROJECT_DIR$/vues/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/vues/gestionProduits.php" />
+        <option value="$PROJECT_DIR$/vues/visibiliteProduit.php" />
+        <option value="$PROJECT_DIR$/vues/ajoutProduit.html" />
+        <option value="$PROJECT_DIR$/vues/addProduct.php" />
+        <option value="$PROJECT_DIR$/class/ProductManager.class.php" />
       </list>
     </option>
   </component>
@@ -345,7 +333,6 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -383,6 +370,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -437,6 +425,50 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vues" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressfood" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressfood" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vues" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressfood" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expressfood" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -457,7 +489,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -561,11 +592,13 @@
       <workItem from="1481563450600" duration="10945000" />
       <workItem from="1481579266168" duration="545000" />
       <workItem from="1481650387476" duration="7978000" />
+      <workItem from="1481734515432" duration="3794000" />
+      <workItem from="1481823229486" duration="3732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140613000" />
+    <option name="totallyTimeSpent" value="148139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -577,14 +610,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="0" width="1936" height="1056" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14765458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15085287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14069264" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17207792" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" x="109" y="88" width="1736" height="856" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18506494" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
@@ -635,33 +668,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vues/router.php" />
-    <entry file="file://$PROJECT_DIR$/class/Router.class.php" />
-    <entry file="file://$PROJECT_DIR$/vues/deconnecte.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46b7fcbe-a515-4fe3-a509-2fd0503d5ea3/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/53c1e3c9-ceb4-48fe-a8ab-b1331d6cfdfa/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.produits">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -673,14 +683,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.employe">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -726,22 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Produit.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/affichePanier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -751,14 +745,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.utilisateur">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -792,14 +786,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.livreur">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -855,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="78" column="106" lean-forward="false" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/ServiceProvider.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -871,33 +857,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/effacerClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-          <folding>
-            <marker date="1481577704553" expanded="true" signature="293:333" ph="SELECT * FRO... produits" />
-            <marker date="1481577704553" expanded="true" signature="667:689" ph="SELECT * FRO... produits" />
-            <marker date="1481577704553" expanded="true" signature="667:726" ph="SELECT * FRO... produits" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,17 +1039,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/updateInfos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="47" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/userUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state relative-caret-position="1530">
           <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
           <folding />
         </state>
@@ -1094,7 +1050,7 @@
     <entry file="file://$PROJECT_DIR$/class/CommandManager.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <marker date="1481577453144" expanded="true" signature="218:246" ph="SELECT * FRO... commande" />
             <marker date="1481577453144" expanded="true" signature="218:274" ph="SELECT * FRO... commande" />
@@ -1124,11 +1080,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/updateUser.php">
+    <entry file="file://$PROJECT_DIR$/class/commande.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        <state relative-caret-position="1853">
+          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/historiqueClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="61" selection-end-column="100" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="78" column="106" lean-forward="false" selection-start-line="78" selection-start-column="106" selection-end-line="78" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="17" lean-forward="false" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9d61e5bd/8b1c196c-669c-4f30-9a98-193fc15ab215/express_food.produits">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1140,29 +1142,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/commande.class.php">
+    <entry file="file://$PROJECT_DIR$/vues/effacerClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="35" />
+        <state relative-caret-position="408">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/historiqueClient.php">
+    <entry file="file://$PROJECT_DIR$/vues/updateInfos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="47" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/gestionProduits.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#268#449#0#PHP" expanded="true" />
+            <element signature="e#1272#1463#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/visibiliteProduit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="61" selection-end-column="100" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/moncompte.php">
+    <entry file="file://$PROJECT_DIR$/vues/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/ajoutProduit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Produit.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/addProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ProductManager.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1481826967995" expanded="true" signature="293:333" ph="SELECT * FRO... produits" />
+            <marker date="1481826967995" expanded="true" signature="679:701" ph="SELECT * FRO... produits" />
+            <marker date="1481826967995" expanded="true" signature="679:749" ph="SELECT * FRO... produits" />
+            <marker date="1481826967995" expanded="true" signature="1141:1165" ph="INSERT INTO produits... " />
+            <marker date="1481826967995" expanded="true" signature="1753:1811" ph="UPDATE visib... " />
+            <marker date="1481826967995" expanded="true" signature="1753:1812" ph="UPDATE visib... " />
+          </folding>
         </state>
       </provider>
     </entry>
