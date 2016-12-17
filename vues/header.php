@@ -113,7 +113,6 @@
                                 if($_SESSION['role']=='admin') {
 
                                     echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('gestionEmployes') . '">Gestion des employés</a></li>';
-                                    echo '<li class="menu-btn"><a href="' . ServiceProvider::setRoute('gestionVentes') . '">Gestion des ventes</a></li>';
 
                                     // Menu service client
                                 } else if($_SESSION['role']=='service') {

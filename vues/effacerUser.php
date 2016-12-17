@@ -24,6 +24,19 @@ if($_SESSION['utilisateur']->getIdUtilisateur() == $_GET['id']){
 
 } else {
 
-    ServiceProvider::newPage(ServiceProvider::setRoute('gestionClients'));
+    switch ($_SESSION['role']){
+
+        case "service":
+            ServiceProvider::newPage(ServiceProvider::setRoute('gestionClients'));
+            break;
+        case "admin":
+            ServiceProvider::newPage(ServiceProvider::setRoute('gestionEmployes'));
+            break;
+
+    }
+
+
+
+
 
 }

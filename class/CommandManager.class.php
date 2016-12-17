@@ -69,19 +69,6 @@ class CommandManager extends DAO {
         return $commande;
 	}
 
-
-	/**
-	 * @access public
-	 * @return object[array]
-     *
-     * Récupère toutes les commandes (sur les 30 derniers jours) de la BDD
-	 */
-
-	public  function getCommands() {
-
-	}
-
-
 	/**
 	 * @access public
 	 * @param array object Command
@@ -138,18 +125,6 @@ class CommandManager extends DAO {
 
 	}
 
-
-	/**
-	 * @access public
-	 * @param string $refCommande 
-	 * @return void
-     *
-     * efface une commande dont la ref == $refCommande
-	 */
-
-	public  function deleteCommand($refCommande) {
-
-	}
 
     /**
      * @param array $commande

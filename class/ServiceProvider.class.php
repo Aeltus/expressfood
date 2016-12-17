@@ -127,7 +127,7 @@ class ServiceProvider
                 $routeComplete = $_SERVER["DOCUMENT_ROOT"].'/vues/'.$route.'.html';
             } else {
                 $_SESSION['message-erreur'] = "Les pages :<br />     - vues/".$route.".php<br />     - vues/".$route.".html<br />     - vues/".$route.".htm<br /> n'existent pas. Merci de vérifier l'adresse.";
-                $routeComplete = '404.php';
+                $routeComplete = '/vues/404.html';
             }
 
         return $routeComplete;

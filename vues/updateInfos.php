@@ -11,6 +11,7 @@
 
 
             <?php
+            $_SESSION['routeActuelle'] = "moncompte";
             // si l'utilisateur à des droits c'est donc un employe
             if (method_exists($_SESSION['utilisateur'], 'getDroits')){
                 // si c'est un livreur

@@ -9,7 +9,7 @@
         <tr><th>ID</th><th>Nom / Prenom</th><th>Adresse</th><th>mail</th><th>Historique commandes</th><th>Modifier</th><th>Effacer</th></tr>
 
         <?php
-
+        $_SESSION['routeActuelle'] = "gestionClients";
         // récupération des utilisateurs de type client
         $req = new UserManager();
         $users = $req->getUsers('client');
@@ -17,7 +17,7 @@
         // constitution du tableau
         foreach ($users as $user){
             echo "<tr><td>".$user->getIdUtilisateur()."</td><td>".$user->getNom()." ".$user->getPrenom()."</td><td>".$user->getNumero()." ".$user->getRue()."<br />".$user->getCodePostal()." ".$user->getVille()."</td><td>".$user->getMail();
-            echo "</td><td><a href='index.php?content=historiqueClient&id=".$user->getIdUtilisateur()."'>voir</a></td><td><a href='index.php?content=updateUser&id=".$user->getIdUtilisateur()."'>modifier</a></td><td><a href='index.php?content=effacerClient&id=".$user->getIdUtilisateur()."'>effacer</a></td></tr>";
+            echo "</td><td><a href='index.php?content=historiqueClient&id=".$user->getIdUtilisateur()."'>voir</a></td><td><a href='index.php?content=updateUser&id=".$user->getIdUtilisateur()."'>modifier</a></td><td><a href='index.php?content=effacerUser&id=".$user->getIdUtilisateur()."'>effacer</a></td></tr>";
         }
 
         ?>

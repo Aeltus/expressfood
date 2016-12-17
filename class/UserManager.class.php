@@ -262,11 +262,13 @@ class UserManager extends DAO {
         // si il s'agit d'un employe
         } else {
 
-	        $idLivreur = NULL;
+	        $idLivreur = "NULL";
 
 	        // Si il s'agit d'un livreur on commence par créer le livreur en BDD et enregistrer son identifiant
-	        if(method_exists($utilisateur, 'dispo')){
+	        if(method_exists($utilisateur, 'getDispo')){
 	            $query = "INSERT INTO livreur VALUES (NULL, '".$utilisateur->getLocationLat()."', '".$utilisateur->getLocationLong()."', '".$utilisateur->getVilleRatach()."', 1)";
+
+
 	            $this->pdoMysqlQuery($query);
                 $query = "SELECT MAX(id_livreur) as id_livreur FROM livreur";
                 $resultat = $this->pdoMysqlQuery($query);
@@ -275,8 +277,8 @@ class UserManager extends DAO {
             }
 
             //On enregistre l'employe
-            $query = "INSERT INTO employe VALUES (".$utilisateur->getDroits().", ".$idLivreur.")";
-            $this->pdoMysqlQuery($query);
+            $query = "INSERT INTO employe VALUES (NULL, ".$utilisateur->getDroits().", ".$idLivreur.")";
+	        $this->pdoMysqlQuery($query);
             $query = "SELECT MAX(id_employe) as id_employe FROM employe";
             $resultat = $this->pdoMysqlQuery($query);
             $donnees = $resultat->fetch();
